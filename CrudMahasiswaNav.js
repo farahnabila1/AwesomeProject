@@ -1,9 +1,8 @@
 import * as React from 'react';
-import { Text, View } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { FontAwesomeIcon } from '@fortawesome/react-native-fontawesome'
-import { faUserGraduate, faUserPen, faMapPin, faBed, faStethoscope, faHospitalUser, faUser, faMapLocation } from '@fortawesome/free-solid-svg-icons';
+import { faUserPen, faBed, faStethoscope, faHospitalUser, faUser, faMapLocation } from '@fortawesome/free-solid-svg-icons';
 import Profil from './App';
 import { WebView } from 'react-native-webview';
 import Createdata from './Createdata';

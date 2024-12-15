@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { SafeAreaView, View, TextInput, Button, StyleSheet, Text, FlatList, TouchableOpacity } from 'react-native';
 import { FontAwesomeIcon } from '@fortawesome/react-native-fontawesome';
-import { faPenToSquare, faGraduationCap, faHospital } from '@fortawesome/free-solid-svg-icons';
+import { faPenToSquare, faHospital } from '@fortawesome/free-solid-svg-icons';
 
 const Createdata = () => {
     const jsonUrl = 'http://192.168.56.41:3000/rumahsakit';
