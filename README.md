@@ -23,61 +23,79 @@ Aplikasi ini dibangun dengan menggunakan teknologi dan pustaka berikut:
 
 ## 🔗 **Sumber Data**
 
-Aplikasi ini mengambil data dari berbagai sumber server dengan endpoint sebagai berikut:
+Aplikasi ini mengambil data dari berbagai sumber sebagai referensi:
 
-- **URL API Data Rumah Sakit: http://192.168.56.41:3000/rumahsakit**  
+1. **Data Rumah Sakit**  
+   Endpoint API rumah sakit digunakan dari:  
+   - `http://192.168.56.41:3000/rumahsakit`  
+   Data ini mencakup informasi rumah sakit seperti alamat, rating, kontak, dan layanan yang ditawarkan.
 
-Data ini mencakup informasi rumah sakit seperti alamat, rating, kontak, dan informasi terkait layanan kesehatan.
+2. **Scraper Data Google Maps**  
+   Menggunakan metode scraper untuk mengumpulkan informasi rumah sakit dari Google Maps. Data ini tersimpan dalam format **CSV** untuk memudahkan analisis data lebih lanjut.
+
+   - **Contoh sumber CSV:**  
+     - Nama rumah sakit  
+     - Lokasi GPS (lintang & bujur)  
+     - Kontak dan rating  
+     - Alamat dan layanan kesehatan terkait.
+
+   **Contoh file:**  
+   [data-scraper-googlemaps.csv](assets/data/data-scraper-googlemaps.csv)
 
 ---
 
 ## 📸 **Tangkapan Layar**
 
-### 🏠 **Tampilan Landing Page**
+### 🏠 **Tampilan Landing Page**  
 Halaman utama dengan tampilan informasi pembuat aplikasi dan gambaran umum aplikasi.
 
-![Tampilan Landing Page](assets/LandingPage.jpg)
+<p align="center">
+  <img src="assets/LandingPage-small.jpg" alt="Tampilan Landing Page" width="500" />
+</p>
 
 ---
 
-### 🏠 **Tampilan Peta Lokasi**
-Peta yang ditampilkan dengan sebaran titik lokasi rumah sakit di Kota Surabaya disertai dengan fitur search untuk mempermudah pencarian titik lokasi.
+### 🗺️ **Tampilan Peta Lokasi**  
+Peta yang menampilkan sebaran lokasi rumah sakit di Kota Surabaya dengan fitur pencarian lokasi.
 
-![Tampilan Peta Lokasi](assets/map.jpg)
-
----
-
-### ✏️ **Formulir Pesan Kamar**
-Formulir ini memungkinkan pengguna untuk melakukan pemesanan kamar pasien di rumah sakit yang telah dipilih.
-
-![Daftar Rumah Sakit](assets/form.jpg)
-![Formulir Pesan Kamar](assets/formulir%20pendaftaran.jpg)
+<p align="center">
+  <img src="assets/map-small.jpg" alt="Tampilan Peta Lokasi" width="500" />
+</p>
 
 ---
 
-### ✏️ **Formulir Edit Data Rumah Sakit**
-Formulir ini memungkinkan pengguna untuk mengedit data rumah sakit dengan mudah.
+### 🏥 **Formulir Pesan Kamar**  
+Formulir untuk memesan kamar di rumah sakit yang dipilih oleh pengguna.
 
-![Formulir Edit Data](assets/edit%20form.jpg)
-
----
-
-### 🏥 **Daftar Rumah Sakit**
-Tampilan daftar rumah sakit dengan detail seperti alamat, rating, dan kontak.
-
-![Daftar Rumah Sakit](assets/images/daftar_rumah_sakit.png)
+<p align="center">
+  <img src="assets/form-small.jpg" alt="Formulir Pesan Kamar" width="500" />
+</p>
 
 ---
 
-### 🔗 **Profil Penyusun**
-Profil penyusun aplikasi kesehatan Kota Surabaya "CareLink".
+### ✏️ **Formulir Edit Data Rumah Sakit**  
+Memungkinkan pengguna untuk mengedit informasi rumah sakit dengan cepat dan sederhana.
 
-![Profil Penyusun](assets/profil1.jpg)
+<p align="center">
+  <img src="assets/edit-form-small.jpg" alt="Formulir Edit Data Rumah Sakit" width="500" />
+</p>
 
 ---
-### 🔗 **Navigasi Media Sosial**
-Menu navigasi untuk mengakses berbagai tautan komunikasi seperti WhatsApp, Instagram, LinkedIn, dan GitHub.
 
-![Tautan Media Sosial](assets/profil2.jpg)
+### 🔗 **Navigasi Media Sosial**  
+Menu navigasi untuk mengakses tautan komunikasi seperti WhatsApp, Instagram, LinkedIn, dan GitHub.
+
+<p align="center">
+  <img src="assets/social-links-small.jpg" alt="Navigasi Media Sosial" width="500" />
+</p>
+
+---
+
+### 👤 **Profil Penyusun**  
+Informasi dan profil penyusun aplikasi untuk menginspirasi kolaborasi dan komunikasi.
+
+<p align="center">
+  <img src="assets/profil-small.jpg" alt="Profil Penyusun" width="500" />
+</p>
 
 ---
