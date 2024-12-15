@@ -1,81 +1,83 @@
-Nama Produk
-CareLink - Aplikasi Kesehatan
-📝 Deskripsi Produk
-CareLink adalah aplikasi mobile berbasis React Native yang dirancang untuk memudahkan pengguna dalam mengakses informasi dan data rumah sakit atau fasilitas kesehatan. Aplikasi ini memungkinkan pengguna untuk melihat detail rumah sakit seperti alamat, rating, dan informasi kontak, serta melakukan pembaruan data rumah sakit dengan cepat dan mudah.
+# 📱 **CareLink - Aplikasi Kesehatan Digital**
 
-⚙️ Komponen Pembangun Produk
-1. Createdata
-Komponen untuk mengedit informasi rumah sakit melalui formulir interaktif yang terhubung dengan server menggunakan REST API.
-Fitur: Memilih rumah sakit, mengisi data seperti nama, rating, alamat, nomor telepon, dan jam operasional.
-2. LinkList
-Komponen ini berfungsi untuk menampilkan daftar tautan ke berbagai platform sosial media untuk memudahkan komunikasi dan konektivitas.
-Platform yang didukung: LinkedIn, Instagram, WhatsApp, GitHub.
-3. Header
-Bagian header dengan latar belakang bergambar dan informasi aplikasi "CareLink".
-Mendesain kesan profesional dan modern dengan tema responsif berdasarkan mode gelap atau terang.
-4. App.tsx
-Komponen utama yang mengintegrasikan semua komponen seperti Header, Createdata, dan LinkList dalam satu tampilan aplikasi.
-🌍 Sumber Data
-Aplikasi ini menggunakan data dari server lokal menggunakan endpoint API seperti:
+---
 
-http://192.168.56.41:3000/rumahsakit
-Teknologi yang Digunakan
+## ✨ **Deskripsi Produk**
 
-React Native
-REST API dengan metode GET dan PATCH untuk komunikasi data
-Font Awesome untuk ikon visual
-Styled components untuk desain UI
-📸 Tangkapan Layar
-Tampilan Awal - Header
+**CareLink** adalah aplikasi mobile berbasis **React Native** yang dirancang untuk membantu pengguna dalam mengelola dan mengakses informasi rumah sakit serta layanan kesehatan dengan cepat dan mudah. Aplikasi ini memiliki berbagai fitur untuk memudahkan navigasi layanan kesehatan, informasi rumah sakit, serta komunikasi melalui berbagai media sosial.
 
-Formulir Edit Data Rumah Sakit
+---
 
-Daftar Rumah Sakit
+## 🛠️ **Komponen Pembangun Produk**
 
-Daftar Tautan Sosial Media
+Aplikasi ini dibangun dengan menggunakan teknologi dan pustaka berikut:
 
-🛠️ Cara Menjalankan Proyek Ini
-Persyaratan
-Sebelum menjalankan aplikasi, pastikan Anda memiliki hal-hal berikut:
+- **React Native** - Framework untuk membangun aplikasi lintas platform yang cepat dan responsif.
+- **React Navigation** - Untuk navigasi antar halaman dengan lancar.
+- **FontAwesome** - Digunakan untuk menampilkan ikon media sosial dan ikon navigasi.
+- **Axios** - Untuk komunikasi dengan server menggunakan HTTP request.
+- **React Native Maps** - Untuk menampilkan peta lokasi rumah sakit dan tempat layanan kesehatan.
+- **State Management dengan Hooks** - Menggunakan React hooks untuk mengatur state dan manajemen data.
 
-Node.js dan npm atau Yarn sudah terinstal di komputer Anda.
-Emulator Android/iOS atau perangkat fisik dengan React Native.
-Instalasi
-bash
-Copy code
-# Clone repositori ini
-git clone https://github.com/username/repository.git
+---
 
-# Masuk ke direktori proyek
-cd CareLink
+## 🔗 **Sumber Data**
 
-# Instalasi dependensi
-npm install
-# atau
-yarn install
-Jalankan Proyek
-Untuk memulai proyek di emulator atau perangkat Anda:
+Aplikasi ini mengambil data dari berbagai sumber server dengan endpoint sebagai berikut:
 
-bash
-Copy code
-npm start
-# atau
-yarn start
-Lalu, untuk menjalankan aplikasi di emulator Android/iOS:
+- **URL API Data Rumah Sakit: http://192.168.56.41:3000/rumahsakit**  
 
-bash
-Copy code
-npm run android
-# atau
-npm run ios
-📜 Lisensi
-Aplikasi ini dibuat untuk keperluan studi dan pendidikan. Anda dapat menggunakannya dengan referensi ke pemilik kode.
+Data ini mencakup informasi rumah sakit seperti alamat, rating, kontak, dan informasi terkait layanan kesehatan.
 
-💬 Kontak
-Jika Anda memiliki pertanyaan atau saran, silakan hubungi saya:
+---
 
-📧 [Email Anda]
-👩‍💻 GitHub Anda
+## 📸 **Tangkapan Layar**
 
-Terima kasih sudah melihat proyek ini! Semoga bermanfaat! 🚀
+### 🏠 **Tampilan Landing Page**
+Halaman utama dengan tampilan informasi pembuat aplikasi dan gambaran umum aplikasi.
 
+![Tampilan Landing Page](assets/LandingPage.jpg)
+
+---
+
+### 🏠 **Tampilan Peta Lokasi**
+Peta yang ditampilkan dengan sebaran titik lokasi rumah sakit di Kota Surabaya disertai dengan fitur search untuk mempermudah pencarian titik lokasi.
+
+![Tampilan Peta Lokasi](assets/map.jpg)
+
+---
+
+### ✏️ **Formulir Pesan Kamar**
+Formulir ini memungkinkan pengguna untuk melakukan pemesanan kamar pasien di rumah sakit yang telah dipilih.
+
+![Daftar Rumah Sakit](assets/form.jpg)
+![Formulir Pesan Kamar](assets/formulir%20pendaftaran.jpg)
+
+---
+
+### ✏️ **Formulir Edit Data Rumah Sakit**
+Formulir ini memungkinkan pengguna untuk mengedit data rumah sakit dengan mudah.
+
+![Formulir Edit Data](assets/edit%20form.jpg)
+
+---
+
+### 🏥 **Daftar Rumah Sakit**
+Tampilan daftar rumah sakit dengan detail seperti alamat, rating, dan kontak.
+
+![Daftar Rumah Sakit](assets/images/daftar_rumah_sakit.png)
+
+---
+
+### 🔗 **Profil Penyusun**
+Profil penyusun aplikasi kesehatan Kota Surabaya "CareLink".
+
+![Profil Penyusun](assets/profil1.jpg)
+
+---
+### 🔗 **Navigasi Media Sosial**
+Menu navigasi untuk mengakses berbagai tautan komunikasi seperti WhatsApp, Instagram, LinkedIn, dan GitHub.
+
+![Tautan Media Sosial](assets/profil2.jpg)
+
+---
