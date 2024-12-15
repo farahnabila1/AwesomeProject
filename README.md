@@ -33,15 +33,6 @@ Aplikasi ini mengambil data dari berbagai sumber sebagai referensi:
 2. **Scraper Data Google Maps**  
    Menggunakan metode scraper untuk mengumpulkan informasi rumah sakit dari Google Maps. Data ini tersimpan dalam format **CSV** untuk memudahkan analisis data lebih lanjut.
 
-   - **Contoh sumber CSV:**  
-     - Nama rumah sakit  
-     - Lokasi GPS (lintang & bujur)  
-     - Kontak dan rating  
-     - Alamat dan layanan kesehatan terkait.
-
-   **Contoh file:**  
-   [data-scraper-googlemaps.csv](assets/data/data-scraper-googlemaps.csv)
-
 ---
 
 ## 📸 **Tangkapan Layar**
