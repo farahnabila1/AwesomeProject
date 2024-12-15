@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peta Interaktif dengan Data Rumah Sakit</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="" />
+    <style>
+        /* Reset margin dan pengaturan umum */
+        html,
+        body {
+            height: 100%;
+            margin: 0;
+            font-family: 'Roboto', Arial, sans-serif;
+            background: linear-gradient(135deg, #eceff1, #d9dde3);
+        }
+    
+        /* Map Area */
+        #map {
+            height: 75%;
+            width: 100%;
+        }
+    
+        /* Search Form Desain Modern */
+        #search-form {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 12px;
+            max-width: 600px;
+            margin: 30px auto;
+            margin-top: 0px;
+            box-shadow: 0 4px 8px rgba(1, 1, 1, 0.2);
+            background: white;
+            transition: transform 0.2s ease;
+        }
+    
+        #search-form:hover {
+            transform: scale(1.02);
+        }
+    
+        /* Input teks */
+        #hospital-name {
+            flex-grow: 1;
+            padding: 10px 15px;
+            border: 2px solid #6c757d;
+            border-radius: 8px;
+            font-size: 16px;
+            color: #495057;
+            transition: border-color 0.3s ease;
+        }
+    
+        #hospital-name:focus {
+            border-color: #007bff;
+            outline: none;
+        }
+    
+        /* Tombol Desain */
+        #search-button,
+        #close-button {
+            padding: 10px 20px;
+            font-size: 15px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: transform 0.2s ease, background-color 0.3s ease;
+        }
+    
+        #search-button {
+            background-color: #007bff;
+            color: white;
+        }
+    
+        #search-button:hover {
+            background-color: #0056b3;
+            transform: scale(1.1);
+        }
+    
+        #close-button {
+            background-color: #e74c3c;
+            color: white;
+        }
+    
+        #close-button:hover {
+            background-color: #c0392b;
+            transform: scale(1.1);
+        }
+    
+        /* Responsif untuk berbagai ukuran layar */
+        @media (max-width: 768px) {
+            #search-form {
+                flex-direction: column;
+                gap: 15px;
+                text-align: center;
+                max-width: 90%;
+            }
+    
+            #hospital-name,
+            #search-button,
+            #close-button {
+                width: 100%;
+            }
+        }
+    </style>
+    
+</head>
+
+<body>
+    <div id="map"></div>
+
+    <!-- Form Pencarian -->
+    <div id="search-form">
+        <input type="text" id="hospital-name" placeholder="Cari nama rumah sakit...">
+        <button id="search-button">Cari</button>
+        <button id="close-button">Tutup</button>
+    </div>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+    <script>
+        // Inisialisasi peta
+        var map = L.map('map').setView([-7.2756, 112.6411], 11);
+
+        // Layer Basemap
+        var basemaps = {
+            "OpenStreetMap": L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', { maxZoom: 20 }),
+            "Google Hybrid": L.tileLayer('https://mt1.google.com/vt/lyrs=y&x={x}&y={y}&z={z}', { maxZoom: 20 }),
+            "Google Satellite": L.tileLayer('https://mt1.google.com/vt/lyrs=s&x={x}&y={y}&z={z}', { maxZoom: 20 })
+        };
+
+        // Tambahkan default basemap
+        basemaps["OpenStreetMap"].addTo(map);
+
+        // Layer Control untuk basemap
+        L.control.layers(basemaps).addTo(map);
+
+        // Data JSON rumah sakit
+        var hospitals = [
+            {
+                "Nama": "Siloam Hospitals Surabaya",
+                "Rating": 4.7,
+                "Jenis": "Rumah Sakit Swasta",
+                "Alamat": "Jl. Raya Gubeng No.70",
+                "JamOperasional": "Buka 24 Jam",
+                "NoTelp": "(031) 99206900",
+                "Latitude": -7.2740112,
+                "Longitude": 112.7464397
+            },
+            {
+                "Nama": "National Hospital",
+                "Rating": 4.5,
+                "Jenis": "Rumah Sakit Swasta",
+                "Alamat": "Jl. Boulevard Famili Sel. No.Kav. 1",
+                "JamOperasional": "Buka 24 Jam",
+                "NoTelp": "(031) 2975777",
+                "Latitude": -7.299401,
+                "Longitude": 112.6764499
+            },
+            {
+                "Nama": "RS Royal Surabaya",
+                "Rating": 4.3,
+                "Jenis": "Rumah Sakit Swasta",
+                "Alamat": "Jl. Rungkut Industri I No.1",
+                "JamOperasional": "Buka 24 Jam",
+                "NoTelp": "(031) 8476111",
+                "Latitude": -7.3289922,
+                "Longitude": 112.7508548
+            },
+            {
+                "Nama": "Premier Hospital - Surabaya",
+                "Rating": 4.2,
+                "Jenis": "Rumah Sakit Umum",
+                "Alamat": "Jl. Nginden Intan Barat No.Blok B",
+                "JamOperasional": "Buka 24 Jam",
+                "NoTelp": "(031) 5993211",
+                "Latitude": -7.3044879,
+                "Longitude": 112.765249
+            },
+            {
+                "Nama": "Emergency Services, Husada Utama Hospital",
+                "Rating": 4.6,
+                "Jenis": "Rumah Sakit",
+                "Alamat": "Jl. Prof. DR. Moestopo No.31-35",
+                "JamOperasional": "Buka 24 Jam",
+                "NoTelp": "(031) 5018335",
+                "Latitude": -7.2653589,
+                "Longitude": 112.7560989
+            },
+            {
+                "Nama": "Adi Husada Undaan Hospital",
+                "Rating": 4.5,
+                "Jenis": "Rumah Sakit Umum",
+                "Alamat": "Jl. Undaan Wetan No.40-44",
+                "JamOperasional": "Buka 24 Jam",
+                "NoTelp": "(031) 5318000",
+                "Latitude": -7.2516239,
+                "Longitude": 112.7458645
+            },
+            {
+                "Nama": "RS Bhayangkara Surabaya H.S Samsoeri Mertojoso",
+                "Rating": 4.7,
+                "Jenis": "Rumah Sakit",
+                "Alamat": "Jl. Ahmad Yani No.116",
+                "JamOperasional": "Buka 24 Jam",
+                "NoTelp": "(031) 8292227",
+                "Latitude": -7.3246853,
+                "Longitude": 112.731507
+            },
+            {
+                "Nama": "Regional General Hospital Dr. Soetomo",
+                "Rating": 4.1,
+                "Jenis": "Rumah Sakit Pemerintah",
+                "Alamat": "Jl. Prof. DR. Moestopo No.6-8",
+                "JamOperasional": "Buka 24 Jam",
+                "NoTelp": "(031) 5501078",
+                "Latitude": -7.2682064,
+                "Longitude": 112.7580663
+            },
+            {
+                "Nama": "Rumah Sakit Islam (RSI) Surabaya",
+                "Rating": 4.4,
+                "Jenis": "Rumah Sakit",
+                "Alamat": "Jl. Achmad Yani No.2-4",
+                "JamOperasional": "Buka 24 Jam",
+                "NoTelp": "(031) 8284505",
+                "Latitude": -7.3063849,
+                "Longitude": 112.7349753
+            },
+            {
+                "Nama": "Siloam Hospitals Surabaya",
+                "Rating": 4.7,
+                "Jenis": "Rumah Sakit Swasta",
+                "Alamat": "Jl. Raya Gubeng No.70",
+                "JamOperasional": "Buka 24 Jam",
+                "NoTelp": "(031) 99206900",
+                "Latitude": -7.2740112,
+                "Longitude": 112.7464397
+            },
+            {
+                "Nama": "Rumah Sakit RS William Booth Hospital Surabaya",
+                "Rating": 4.6,
+                "Jenis": "Rumah Sakit Umum",
+                "Alamat": "Jl. Diponegoro No.34",
+                "JamOperasional": "Buka 24 Jam",
+                "NoTelp": "(031) 5678917",
+                "Latitude": -7.2908644,
+                "Longitude": 112.7368603
+            },
+            {
+                "Nama": "Rumah Sakit Al-Irsyad Surabaya",
+                "Rating": 4.6,
+                "Jenis": "Rumah Sakit Swasta",
+                "Alamat": "Jalan KH Mas Mansyur No.210-214 dan 191",
+                "JamOperasional": "Buka 24 Jam",
+                "NoTelp": "(031) 99091800",
+                "Latitude": -7.2280019,
+                "Longitude": 112.7403981
+            },
+            {
+                "Nama": "Mitra Keluarga Surabaya",
+                "Rating": 4.7,
+                "Jenis": "Rumah Sakit Swasta",
+                "Alamat": "Komplek Darmo Satelit, Jl. Satelit Indah II",
+                "JamOperasional": "Buka 24 Jam",
+                "NoTelp": "-",
+                "Latitude": -7.2668587,
+                "Longitude": 112.6913132
+            },
+            {
+                "Nama": "PHC Surabaya Hospital",
+                "Rating": 4.4,
+                "Jenis": "Rumah Sakit Swasta",
+                "Alamat": "Jl. Prapat Kurung Selatan No.1",
+                "JamOperasional": "Buka 24 Jam",
+                "NoTelp": "(031) 3294801",
+                "Latitude": -7.2096489,
+                "Longitude": 112.7360983
+            },
+            {
+                "Nama": "Mayapada Hospital Surabaya (MHSB)",
+                "Rating": 4.5,
+                "Jenis": "Rumah Sakit",
+                "Alamat": "Jl. Mayjen Sungkono No.20",
+                "JamOperasional": "Buka 24 Jam",
+                "NoTelp": "(031) 99217777",
+                "Latitude": -7.292108,
+                "Longitude": 112.7277061
+            },
+            {
+                "Nama": "Rumah Sakit Universitas Airlangga (RS UNAIR)",
+                "Rating": 4.3,
+                "Jenis": "Rumah Sakit Universitas",
+                "Alamat": "Jl. Dharmahusada Permai",
+                "JamOperasional": "Buka 24 Jam",
+                "NoTelp": "(031) 5916290",
+                "Latitude": -7.2698796,
+                "Longitude": 112.7848442
+            },
+            {
+                "Nama": "RSU. Bhakti Rahayu Surabaya",
+                "Rating": 4,
+                "Jenis": "Rumah Sakit Umum",
+                "Alamat": "Jl. Ketintang Madya I No.16",
+                "JamOperasional": "Buka 24 Jam",
+                "NoTelp": "(031) 8295922",
+                "Latitude": -7.3117795,
+                "Longitude": 112.7229514
+            },
+            {
+                "Nama": "Rumah Sakit Umum Gotong Royong",
+                "Rating": 4,
+                "Jenis": "Rumah Sakit Umum",
+                "Alamat": "Jl. Medokan Semampir Indah No.97",
+                "JamOperasional": "Buka 24 Jam",
+                "NoTelp": "0815-7453-5638",
+                "Latitude": -7.307992,
+                "Longitude": 112.787757
+            },
+            {
+                "Nama": "RS UBAYA",
+                "Rating": 4.3,
+                "Jenis": "Rumah Sakit",
+                "Alamat": "Jl. Raya Panjang Jiwo Permai No.87 89",
+                "JamOperasional": "Buka 24 Jam",
+                "NoTelp": "(031) 99211515",
+                "Latitude": -7.3141908,
+                "Longitude": 112.7657511
+            },
+            {
+                "Nama": "RSIA Kendangsari MERR Surabaya",
+                "Rating": 4.7,
+                "Jenis": "Rumah Sakit Swasta",
+                "Alamat": "Jl. Dr. Ir. H. Soekarno No.2",
+                "JamOperasional": "Buka 24 Jam",
+                "NoTelp": "(031) 3814388",
+                "Latitude": -7.2505127,
+                "Longitude": 112.7837174
+            },
+            {
+                "Nama": "RSUD Husada Prima",
+                "Rating": 4.4,
+                "Jenis": "Rumah Sakit Pemerintah",
+                "Alamat": "Jl. Karang Tembok No.39",
+                "JamOperasional": "Buka 24 Jam",
+                "NoTelp": "(031) 3713836",
+                "Latitude": -7.2241491,
+                "Longitude": 112.7465067
+            },
+            {
+                "Nama": "Rumah Sakit (RS) Mitra Keluarga - Kenjeran",
+                "Rating": 4.6,
+                "Jenis": "Rumah Sakit Umum",
+                "Alamat": "Jl. Kenjeran No.506",
+                "JamOperasional": "Buka 24 Jam",
+                "NoTelp": "(031) 99000880",
+                "Latitude": -7.2513324,
+                "Longitude": 112.7849887
+            },
+            {
+                "Nama": "General Hospital Bunda Surabaya",
+                "Rating": 4.9,
+                "Jenis": "Rumah Sakit",
+                "Alamat": "Jl. Raya Kandangan No.23-24",
+                "JamOperasional": "Buka 24 Jam",
+                "NoTelp": "(031) 7442220",
+                "Latitude": -7.2517223,
+                "Longitude": 112.6504606
+            },
+            {
+                "Nama": "Rumah Sakit Adi Husada Kapasari",
+                "Rating": 4.5,
+                "Jenis": "Rumah Sakit Umum",
+                "Alamat": "Jl. Kapasari No.97-101",
+                "JamOperasional": "Buka 24 Jam",
+                "NoTelp": "(031) 3764555",
+                "Latitude": -7.2427127,
+                "Longitude": 112.7520121
+            },
+            {
+                "Nama": "Rumah Sakit Islam Darus Syifa'",
+                "Rating": 4.6,
+                "Jenis": "Rumah Sakit Umum",
+                "Alamat": "Jl. Raya Benowo No.5",
+                "JamOperasional": "Buka 24 Jam",
+                "NoTelp": "(031) 7406293",
+                "Latitude": -7.2350114,
+                "Longitude": 112.612798
+            },
+            {
+                "Nama": "Pura Raharja Hospital",
+                "Rating": 4.6,
+                "Jenis": "Rumah Sakit Umum",
+                "Alamat": "Jl. Pucang Adi No.12-14",
+                "JamOperasional": "Buka 24 Jam",
+                "NoTelp": "(031) 5019898",
+                "Latitude": -7.2832379,
+                "Longitude": 112.7527409
+            },
+            {
+                "Nama": "St. Vincentius A Paulo Catholic Hospital",
+                "Rating": 4.2,
+                "Jenis": "Rumah Sakit Swasta",
+                "Alamat": "Jl. Diponegoro No.51",
+                "JamOperasional": "Buka 24 Jam",
+                "NoTelp": "(031) 5677562",
+                "Latitude": -7.2912236,
+                "Longitude": 112.7361845
+            },
+            {
+                "Nama": "RSPAL dr RAMELAN SURABAYA",
+                "Rating": 4.3,
+                "Jenis": "Rumah Sakit Militer",
+                "Alamat": "Jl. Gadung No.1",
+                "JamOperasional": "Buka 24 Jam",
+                "NoTelp": "(031) 8438153",
+                "Latitude": -7.309672,
+                "Longitude": 112.7381124
+            },
+            {
+                "Nama": "Rumah Sakit RSIA GRAHA MEDIKA",
+                "Rating": 4.6,
+                "Jenis": "Rumah Sakit Bersalin",
+                "Alamat": "Graha Sampurna Indah, Jl. Raya Babatan Sampurna No.22",
+                "JamOperasional": "Buka 24 Jam",
+                "NoTelp": "(031) 7523434",
+                "Latitude": -7.3123728,
+                "Longitude": 112.6815792
+            },
+            {
+                "Nama": "Rumah Sakit (RS) Darmo",
+                "Rating": 4.3,
+                "Jenis": "Rumah Sakit",
+                "Alamat": "Jl. Raya Darmo No.90",
+                "JamOperasional": "Buka 24 Jam",
+                "NoTelp": "(031) 5676253",
+                "Latitude": -7.287414,
+                "Longitude": 112.73766
+            },
+            {
+                "Nama": "RS PKU Muhammadiyah Surabaya",
+                "Rating": 4.3,
+                "Jenis": "Rumah Sakit",
+                "Alamat": "Jl. KH Mas Mansyur No.180 - 182",
+                "JamOperasional": "Buka 24 Jam",
+                "NoTelp": "0823-1126-2646",
+                "Latitude": -7.229892,
+                "Longitude": 112.7411918
+            },
+            {
+                "Nama": "Rumah Sakit RS Wijaya Surabaya",
+                "Rating": 3.8,
+                "Jenis": "Rumah Sakit Umum",
+                "Alamat": "Jl. Raya Menganti No.398",
+                "JamOperasional": "Buka 24 Jam",
+                "NoTelp": "(031) 7523087",
+                "Latitude": -7.3130939,
+                "Longitude": 112.6917745
+            },
+            {
+                "Nama": "RS Wiyung Sejahtera",
+                "Rating": 4.2,
+                "Jenis": "Rumah Sakit",
+                "Alamat": "Jl. Karangan Pdam No.1-3",
+                "JamOperasional": "Buka 24 Jam",
+                "NoTelp": "(031) 7532653",
+                "Latitude": -7.311233,
+                "Longitude": 112.6880828
+            },
+            {
+                "Nama": "Dr. Mohamad Soewandhie Regional General Hospital",
+                "Rating": 3.6,
+                "Jenis": "Rumah Sakit Pemerintah",
+                "Alamat": "Jl. Tambak Rejo No.45-47",
+                "JamOperasional": "Buka 24 Jam",
+                "NoTelp": "(031) 3717141",
+                "Latitude": -7.2459744,
+                "Longitude": 112.7580038
+            },
+            {
+                "Nama": "Surabaya Medical Service Hospital",
+                "Rating": 4.1,
+                "Jenis": "Rumah Sakit",
+                "Alamat": "Jl. Kapuas No.2",
+                "JamOperasional": "Buka 24 Jam",
+                "NoTelp": "0821-3988-2229",
+                "Latitude": -7.289055,
+                "Longitude": 112.741496
+            },
+            {
+                "Nama": "Rumah Sakit Manyar Medical Centre",
+                "Rating": 4.2,
+                "Jenis": "Rumah Sakit",
+                "Alamat": "Jl. Raya Manyar No.9",
+                "JamOperasional": "Buka 24 Jam",
+                "NoTelp": "(031) 5999339",
+                "Latitude": -7.289889,
+                "Longitude": 112.763083
+            },
+            {
+                "Nama": "Rumah Sakit Tk.III Brawijaya",
+                "Rating": 4.1,
+                "Jenis": "Rumah Sakit Militer",
+                "Alamat": "Jl. Kesatriyan No.17",
+                "JamOperasional": "Buka 24 Jam",
+                "NoTelp": "(031) 5668343",
+                "Latitude": -7.2971309,
+                "Longitude": 112.7232731
+            },
+            {
+                "Nama": "Rumah Sakit Ibu dan Anak Kendangsari",
+                "Rating": 4.5,
+                "Jenis": "Rumah Sakit Swasta",
+                "Alamat": "Jl. Raya Kendangsari No.38",
+                "JamOperasional": "Buka 24 Jam",
+                "NoTelp": "(031) 8436200",
+                "Latitude": -7.3253334,
+                "Longitude": 112.7453578
+            },
+            {
+                "Nama": "Rumah Sakit Rumkit Soemitro Lanud Mulyono",
+                "Rating": 4.5,
+                "Jenis": "Rumah Sakit",
+                "Alamat": "Jl. Serayu No.17",
+                "JamOperasional": "Buka 24 Jam",
+                "NoTelp": "(031) 5669514",
+                "Latitude": -7.2915134,
+                "Longitude": 112.7408637
+            },
+            {
+                "Nama": "Putri\" Maternity Hospital",
+                "Rating": 4.4,
+                "Jenis": "Rumah Sakit Anak",
+                "Alamat": "Jl. Arief Rahman Hakim No.130",
+                "JamOperasional": "Buka 24 Jam",
+                "NoTelp": "(031) 5999987",
+                "Latitude": -7.2909532,
+                "Longitude": 112.7826708
+            },
+            {
+                "Nama": "Hospital Bunda Morula Surabaya (BMS)",
+                "Rating": 4.8,
+                "Jenis": "Rumah Sakit Bersalin",
+                "Alamat": "Jl. Tegalsari No.59",
+                "JamOperasional": "Buka 24 Jam",
+                "NoTelp": "(031) 30008000",
+                "Latitude": -7.2660837,
+                "Longitude": 112.736944
+            },
+            {
+                "Nama": "Jemursari Islamic Hospital - Surabaya",
+                "Rating": 3.7,
+                "Jenis": "Rumah Sakit Swasta",
+                "Alamat": "Jl. Raya Jemursari No.51-57",
+                "JamOperasional": "Buka 24 Jam",
+                "NoTelp": "(031) 8471877",
+                "Latitude": -7.3226354,
+                "Longitude": 112.739767
+            },
+            {
+                "Nama": "Emergency Unit of DKT Gubeng Corner Hospital",
+                "Rating": 3.9,
+                "Jenis": "Rumah Sakit Bersalin",
+                "Alamat": "Jl. Gubeng Pojok No.21",
+                "JamOperasional": "Buka 24 Jam",
+                "NoTelp": "(031) 5464215",
+                "Latitude": -7.2651263,
+                "Longitude": 112.7516133
+            },
+            {
+                "Nama": "Rumah Sakit Umum Daerah Bhakti Dharma Husada",
+                "Rating": 4.6,
+                "Jenis": "Rumah Sakit Umum",
+                "Alamat": "Jl. Kendung No.115-117",
+                "JamOperasional": "Buka 24 Jam",
+                "NoTelp": "(031) 7409135",
+                "Latitude": -7.2555336,
+                "Longitude": 112.6356218
+            },
+            {
+                "Nama": "Rumah Sakit Onkologi Surabaya",
+                "Rating": 4.4,
+                "Jenis": "Rumah Sakit Spesialis",
+                "Alamat": "Araya, A2 No 7, Jl. Galaxy Bumi Permai No.A2 No 7",
+                "JamOperasional": "Buka 24 Jam",
+                "NoTelp": "(031) 5914855",
+                "Latitude": -7.290787,
+                "Longitude": 112.789378
+            },
+            {
+                "Nama": "RSIA Cempaka Putih Permata",
+                "Rating": 4.8,
+                "Jenis": "Rumah Sakit",
+                "Alamat": "Jl. Jambangan Kebon Agung No.8",
+                "JamOperasional": "Buka 24 Jam",
+                "NoTelp": "(031) 8282350",
+                "Latitude": -7.3215713,
+                "Longitude": 112.714057
+            },
+            {
+                "Nama": "RSIA Lombok Dua Dua Surabaya",
+                "Rating": 4.3,
+                "Jenis": "Rumah Sakit Bersalin",
+                "Alamat": "Jl. Flores No.12",
+                "JamOperasional": "Buka 24 Jam",
+                "NoTelp": "(031) 5022044",
+                "Latitude": -7.278481,
+                "Longitude": 112.748947
+            },
+            {
+                "Nama": "IBI Surabaya Maternity Hospital",
+                "Rating": 4.1,
+                "Jenis": "Rumah Sakit Bersalin",
+                "Alamat": "Jl. Raya Dupak No.15A",
+                "JamOperasional": "Buka 24 Jam",
+                "NoTelp": "(031) 5323837",
+                "Latitude": -7.245351,
+                "Longitude": 112.727859
+            },
+            {
+                "Nama": "Rumah Sakit Umum Daerah Haji Provinsi Jawa Timur",
+                "Rating": 4.6,
+                "Jenis": "Rumah Sakit Umum",
+                "Alamat": "Jl. Manyar Kertoadi",
+                "JamOperasional": "Closed",
+                "NoTelp": "(031) 5924000",
+                "Latitude": -7.2833287,
+                "Longitude": 112.7796844
+            },
+            {
+                "Nama": "Rumah Sakit RSIA Nur Ummi Numbi",
+                "Rating": 4.8,
+                "Jenis": "Rumah Sakit Bersalin",
+                "Alamat": "Jl. Manukan Tengah No.4-6 Blok 51J, RW.06",
+                "JamOperasional": "Buka 24 Jam",
+                "NoTelp": "(031) 7404391",
+                "Latitude": -7.264807,
+                "Longitude": 112.662077
+            },
+            {
+                "Nama": "Instalasi Rawat Jalan RS. DR. Soetomo",
+                "Rating": 4.5,
+                "Jenis": "Rumah Sakit",
+                "Alamat": "Jl. Dharmawangsa No.4",
+                "JamOperasional": "Buka 24 Jam",
+                "NoTelp": "-",
+                "Latitude": -7.2668651,
+                "Longitude": 112.7568339
+            },
+            {
+                "Nama": "Muji Rahayu Hospital",
+                "Rating": 3.3,
+                "Jenis": "Rumah Sakit Umum",
+                "Alamat": "Jl. Raya Manukan Wetan No.68 A",
+                "JamOperasional": "Buka 24 Jam",
+                "NoTelp": "(031) 7404132",
+                "Latitude": -7.257172,
+                "Longitude": 112.670966
+            },
+            {
+                "Nama": "RS UPT Vertikal Surabaya",
+                "Rating": 4.9,
+                "Jenis": "Rumah Sakit",
+                "Alamat": "Jl. Indrapura No.17",
+                "JamOperasional": "Closed",
+                "NoTelp": "-",
+                "Latitude": -7.2403292,
+                "Longitude": 112.7315062
+            },
+            {
+                "Nama": "Rumah Sakit Marinir Ewa Pangalila",
+                "Rating": 4.1,
+                "Jenis": "Rumah Sakit Militer",
+                "Alamat": "MPW5+993",
+                "JamOperasional": "Buka 24 Jam",
+                "NoTelp": "(031) 5678094",
+                "Latitude": -7.3041179,
+                "Longitude": 112.7084213
+            }
+        ];
+
+        // Tambahkan marker untuk setiap data rumah sakit
+        hospitals.forEach(function (hospital) {
+            var marker = L.marker([hospital.Latitude, hospital.Longitude]).addTo(map);
+            marker.bindPopup(`<strong>${hospital.Nama}</strong>`);
+        });
+
+        // Event tombol "Cari"
+        document.getElementById('search-button').addEventListener('click', function () {
+            var searchQuery = document.getElementById('hospital-name').value.toLowerCase();
+
+            // Cari rumah sakit berdasarkan nama
+            var found = hospitals.find(function (hospital) {
+                return hospital.Nama.toLowerCase().includes(searchQuery);
+            });
+
+            if (found) {
+                // Zoom ke lokasi rumah sakit
+                map.setView([found.Latitude, found.Longitude], 15);
+
+                // Tambahkan popup dengan informasi lengkap
+                L.popup()
+                    .setLatLng([found.Latitude, found.Longitude])
+                    .setContent(
+                        `<strong>${found.Nama}</strong><br>` +
+                        `<em>${found.Jenis}</em><br>` +
+                        `Rating: ${found.Rating} &#9733;<br>` +
+                        `Alamat: ${found.Alamat}<br>` +
+                        `Jam Operasional: ${found.JamOperasional}<br>` +
+                        `No. Telp: ${found.NoTelp}<br>` +
+                        `<a href="https://www.google.com/maps?q=${found.Latitude},${found.Longitude}" target="_blank">Lihat di Google Maps</a>`
+                    )
+                    .openOn(map);
+            } else {
+                alert('Rumah sakit tidak ditemukan!');
+            }
+        });
+
+        // Event tombol "Tutup"
+        document.getElementById('close-button').addEventListener('click', function () {
+            document.getElementById('hospital-name').value = '';
+            map.setView([-7.2756, 112.6411], 8);
+        });
+    </script>
+</body>
+</html>

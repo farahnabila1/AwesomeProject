@@ -1,0 +1,490 @@
+{
+    "rumahsakit": [
+    {
+        "id": 1,
+        "name": "Siloam Hospitals Surabaya",
+        "rating": 4.7,
+        "type": "Rumah Sakit Swasta",
+        "address": "Jl. Raya Gubeng No.70",
+        "Clinichours": "Open 24 hours",
+        "phone": "(031) 99206900"
+    },
+    {
+        "id": 2,
+        "name": "National Hospital",
+        "rating": 4.5,
+        "type": "Rumah Sakit Swasta",
+        "address": "Jl. Boulevard Famili Sel. No.Kav. 1",
+        "Clinichours": "Open 24 hours",
+        "phone": "(031) 2975777"
+    },
+    {
+        "id": 3,
+        "name": "RS Royal Surabaya",
+        "rating": 4.3,
+        "type": "Rumah Sakit Swasta",
+        "address": "Jl. Rungkut Industri I No.1",
+        "Clinichours": "Open 24 hours",
+        "phone": "(031) 8476111"
+    },
+    {
+        "id": 4,
+        "name": "Premier Hospital - Surabaya",
+        "rating": 4.2,
+        "type": "Rumah Sakit Umum",
+        "address": "Jl. Nginden Intan Barat No.Blok B",
+        "Clinichours": "Open 24 hours",
+        "phone": "(031) 5993211"
+    },
+    {
+        "id": 5,
+        "name": "Emergency Services, Husada Utama Hospital",
+        "rating": 4.6,
+        "type": "Rumah Sakit",
+        "address": "Jl. Prof. DR. Moestopo No.31-35",
+        "Clinichours": "Open 24 hours",
+        "phone": "(031) 5018335"
+    },
+    {
+        "id": 6,
+        "name": "Adi Husada Undaan Hospital",
+        "rating": 4.5,
+        "type": "Rumah Sakit Umum",
+        "address": "Jl. Undaan Wetan No.40-44",
+        "Clinichours": "Open 24 hours",
+        "phone": "(031) 5318000"
+    },
+    {
+        "id": 7,
+        "name": "RS Bhayangkara Surabaya H.S Samsoeri Mertojoso",
+        "rating": 4.7,
+        "type": "Rumah Sakit",
+        "address": "Jl. Ahmad Yani No.116",
+        "Clinichours": "Open 24 hours",
+        "phone": "(031) 8292227"
+    },
+    {
+        "id": 8,
+        "name": "Regional General Hospital Dr. Soetomo",
+        "rating": 4.1,
+        "type": "Rumah Sakit Pemerintah",
+        "address": "Jl. Prof. DR. Moestopo No.6-8",
+        "Clinichours": "Open 24 hours",
+        "phone": "(031) 5501078"
+    },
+    {
+        "id": 9,
+        "name": "Rumah Sakit Islam (RSI) Surabaya",
+        "rating": 4.4,
+        "type": "Rumah Sakit",
+        "address": "Jl. Achmad Yani No.2-4",
+        "Clinichours": "Open 24 hours",
+        "phone": "(031) 8284505"
+    },
+    {
+        "id": 10,
+        "name": "Siloam Hospitals Surabaya",
+        "rating": 4.7,
+        "type": "Rumah Sakit Swasta",
+        "address": "Jl. Raya Gubeng No.70",
+        "Clinichours": "Open 24 hours",
+        "phone": "(031) 99206900"
+    },
+    {
+        "id": 11,
+        "name": "Rumah Sakit RS William Booth Hospital Surabaya",
+        "rating": 4.6,
+        "type": "Rumah Sakit Umum",
+        "address": "Jl. Diponegoro No.34",
+        "Clinichours": "Open 24 hours",
+        "phone": "(031) 5678917"
+    },
+    {
+        "id": 12,
+        "name": "Rumah Sakit Al-Irsyad Surabaya",
+        "rating": 4.6,
+        "type": "Rumah Sakit Swasta",
+        "address": "Jalan KH Mas Mansyur No.210-214 dan 191",
+        "Clinichours": "Open 24 hours",
+        "phone": "(031) 99091800"
+    },
+    {
+        "id": 13,
+        "name": "Mitra Keluarga Surabaya",
+        "rating": 4.7,
+        "type": "Rumah Sakit Swasta",
+        "address": "Komplek Darmo Satelit, Jl. Satelit Indah II",
+        "Clinichours": "Open 24 hours",
+        "phone": "-"
+    },
+    {
+        "id": 14,
+        "name": "PHC Surabaya Hospital",
+        "rating": 4.4,
+        "type": "Rumah Sakit Swasta",
+        "address": "Jl. Prapat Kurung Selatan No.1",
+        "Clinichours": "Open 24 hours",
+        "phone": "(031) 3294801"
+    },
+    {
+        "id": 15,
+        "name": "Mayapada Hospital Surabaya (MHSB)",
+        "rating": 4.5,
+        "type": "Rumah Sakit",
+        "address": "Jl. Mayjen Sungkono No.20",
+        "Clinichours": "Open 24 hours",
+        "phone": "(031) 99217777"
+    },
+    {
+        "id": 16,
+        "name": "Rumah Sakit Universitas Airlangga (RS UNAIR)",
+        "rating": 4.3,
+        "type": "Rumah Sakit Universitas",
+        "address": "Jl. Dharmahusada Permai",
+        "Clinichours": "Open 24 hours",
+        "phone": "(031) 5916290"
+    },
+    {
+        "id": 17,
+        "name": "RSU. Bhakti Rahayu Surabaya",
+        "rating": 4,
+        "type": "Rumah Sakit Umum",
+        "address": "Jl. Ketintang Madya I No.16",
+        "Clinichours": "Open 24 hours",
+        "phone": "(031) 8295922"
+    },
+    {
+        "id": 18,
+        "name": "Rumah Sakit Umum Gotong Royong",
+        "rating": 4,
+        "type": "Rumah Sakit Umum",
+        "address": "Jl. Medokan Semampir Indah No.97",
+        "Clinichours": "Open 24 hours",
+        "phone": "0815-7453-5638"
+    },
+    {
+        "id": 19,
+        "name": "RS UBAYA",
+        "rating": 4.3,
+        "type": "Rumah Sakit",
+        "address": "Jl. Raya Panjang Jiwo Permai No.87 89",
+        "Clinichours": "Open 24 hours",
+        "phone": "(031) 99211515"
+    },
+    {
+        "id": 20,
+        "name": "RSIA Kendangsari MERR Surabaya",
+        "rating": 4.7,
+        "type": "Rumah Sakit Swasta",
+        "address": "Jl. Dr. Ir. H. Soekarno No.2",
+        "Clinichours": "Open 24 hours",
+        "phone": "(031) 3814388"
+    },
+    {
+        "id": 21,
+        "name": "RSUD Husada Prima",
+        "rating": 4.4,
+        "type": "Rumah Sakit Pemerintah",
+        "address": "Jl. Karang Tembok No.39",
+        "Clinichours": "Open 24 hours",
+        "phone": "(031) 3713836"
+    },
+    {
+        "id": 22,
+        "name": "Rumah Sakit (RS) Mitra Keluarga - Kenjeran",
+        "rating": 4.6,
+        "type": "Rumah Sakit Umum",
+        "address": "Jl. Kenjeran No.506",
+        "Clinichours": "Open 24 hours",
+        "phone": "(031) 99000880"
+    },
+    {
+        "id": 23,
+        "name": "General Hospital Bunda Surabaya",
+        "rating": 4.9,
+        "type": "Rumah Sakit",
+        "address": "Jl. Raya Kandangan No.23-24",
+        "Clinichours": "Open 24 hours",
+        "phone": "(031) 7442220"
+    },
+    {
+        "id": 24,
+        "name": "Rumah Sakit Adi Husada Kapasari",
+        "rating": 4.5,
+        "type": "Rumah Sakit Umum",
+        "address": "Jl. Kapasari No.97-101",
+        "Clinichours": "Open 24 hours",
+        "phone": "(031) 3764555"
+    },
+    {
+        "id": 25,
+        "name": "Rumah Sakit Islam Darus Syifa'",
+        "rating": 4.6,
+        "type": "Rumah Sakit Umum",
+        "address": "Jl. Raya Benowo No.5",
+        "Clinichours": "Open 24 hours",
+        "phone": "(031) 7406293"
+    },
+    {
+        "id": 26,
+        "name": "Pura Raharja Hospital",
+        "rating": 4.6,
+        "type": "Rumah Sakit Umum",
+        "address": "Jl. Pucang Adi No.12-14",
+        "Clinichours": "Open 24 hours",
+        "phone": "(031) 5019898"
+    },
+    {
+        "id": 27,
+        "name": "St. Vincentius A Paulo Catholic Hospital",
+        "rating": 4.2,
+        "type": "Rumah Sakit Swasta",
+        "address": "Jl. Diponegoro No.51",
+        "Clinichours": "Open 24 hours",
+        "phone": "(031) 5677562"
+    },
+    {
+        "id": 28,
+        "name": "RSPAL dr RAMELAN SURABAYA",
+        "rating": 4.3,
+        "type": "Rumah Sakit Militer",
+        "address": "Jl. Gadung No.1",
+        "Clinichours": "Open 24 hours",
+        "phone": "(031) 8438153"
+    },
+    {
+        "id": 29,
+        "name": "Rumah Sakit RSIA GRAHA MEDIKA",
+        "rating": 4.6,
+        "type": "Rumah Sakit Bersalin",
+        "address": "Graha Sampurna Indah, Jl. Raya Babatan Sampurna No.22",
+        "Clinichours": "Open 24 hours",
+        "phone": "(031) 7523434"
+    },
+    {
+        "id": 30,
+        "name": "Rumah Sakit (RS) Darmo",
+        "rating": 4.3,
+        "type": "Rumah Sakit",
+        "address": "Jl. Raya Darmo No.90",
+        "Clinichours": "Open 24 hours",
+        "phone": "(031) 5676253"
+    },
+    {
+        "id": 31,
+        "name": "RS PKU Muhammadiyah Surabaya",
+        "rating": 4.3,
+        "type": "Rumah Sakit",
+        "address": "Jl. KH Mas Mansyur No.180 - 182",
+        "Clinichours": "Open 24 hours",
+        "phone": "0823-1126-2646"
+    },
+    {
+        "id": 32,
+        "name": "Rumah Sakit RS Wijaya Surabaya",
+        "rating": 3.8,
+        "type": "Rumah Sakit Umum",
+        "address": "Jl. Raya Menganti No.398",
+        "Clinichours": "Open 24 hours",
+        "phone": "(031) 7523087"
+    },
+    {
+        "id": 33,
+        "name": "RS Wiyung Sejahtera",
+        "rating": 4.2,
+        "type": "Rumah Sakit",
+        "address": "Jl. Karangan Pdam No.1-3",
+        "Clinichours": "Open 24 hours",
+        "phone": "(031) 7532653"
+    },
+    {
+        "id": 34,
+        "name": "Dr. Mohamad Soewandhie Regional General Hospital",
+        "rating": 3.6,
+        "type": "Rumah Sakit Pemerintah",
+        "address": "Jl. Tambak Rejo No.45-47",
+        "Clinichours": "Open 24 hours",
+        "phone": "(031) 3717141"
+    },
+    {
+        "id": 35,
+        "name": "Surabaya Medical Service Hospital",
+        "rating": 4.1,
+        "type": "Rumah Sakit",
+        "address": "Jl. Kapuas No.2",
+        "Clinichours": "Open 24 hours",
+        "phone": "0821-3988-2229"
+    },
+    {
+        "id": 36,
+        "name": "Rumah Sakit Manyar Medical Centre",
+        "rating": 4.2,
+        "type": "Rumah Sakit",
+        "address": "Jl. Raya Manyar No.9",
+        "Clinichours": "Open 24 hours",
+        "phone": "(031) 5999339"
+    },
+    {
+        "id": 37,
+        "name": "Rumah Sakit Tk.III Brawijaya",
+        "rating": 4.1,
+        "type": "Rumah Sakit Militer",
+        "address": "Jl. Kesatriyan No.17",
+        "Clinichours": "Open 24 hours",
+        "phone": "(031) 5668343"
+    },
+    {
+        "id": 38,
+        "name": "Rumah Sakit Ibu dan Anak Kendangsari",
+        "rating": 4.5,
+        "type": "Rumah Sakit Swasta",
+        "address": "Jl. Raya Kendangsari No.38",
+        "Clinichours": "Open 24 hours",
+        "phone": "(031) 8436200"
+    },
+    {
+        "id": 39,
+        "name": "Rumah Sakit Rumkit Soemitro Lanud Mulyono",
+        "rating": 4.5,
+        "type": "Rumah Sakit",
+        "address": "Jl. Serayu No.17",
+        "Clinichours": "Open 24 hours",
+        "phone": "(031) 5669514"
+    },
+    {
+        "id": 40,
+        "name": "Putri\" Maternity Hospital",
+        "rating": 4.4,
+        "type": "Rumah Sakit Anak",
+        "address": "Jl. Arief Rahman Hakim No.130",
+        "Clinichours": "Open 24 hours",
+        "phone": "(031) 5999987"
+    },
+    {
+        "id": 41,
+        "name": "Hospital Bunda Morula Surabaya (BMS)",
+        "rating": 4.8,
+        "type": "Rumah Sakit Bersalin",
+        "address": "Jl. Tegalsari No.59",
+        "Clinichours": "Open 24 hours",
+        "phone": "(031) 30008000"
+    },
+    {
+        "id": 42,
+        "name": "Jemursari Islamic Hospital - Surabaya",
+        "rating": 3.7,
+        "type": "Rumah Sakit Swasta",
+        "address": "Jl. Raya Jemursari No.51-57",
+        "Clinichours": "Open 24 hours",
+        "phone": "(031) 8471877"
+    },
+    {
+        "id": 43,
+        "name": "Emergency Unit of DKT Gubeng Corner Hospital",
+        "rating": 3.9,
+        "type": "Rumah Sakit Bersalin",
+        "address": "Jl. Gubeng Pojok No.21",
+        "Clinichours": "Open 24 hours",
+        "phone": "(031) 5464215"
+    },
+    {
+        "id": 44,
+        "name": "Rumah Sakit Umum Daerah Bhakti Dharma Husada",
+        "rating": 4.6,
+        "type": "Rumah Sakit Umum",
+        "address": "Jl. Kendung No.115-117",
+        "Clinichours": "Open 24 hours",
+        "phone": "(031) 7409135"
+    },
+    {
+        "id": 45,
+        "name": "Rumah Sakit Onkologi Surabaya",
+        "rating": 4.4,
+        "type": "Rumah Sakit Spesialis",
+        "address": "Araya, A2 No 7, Jl. Galaxy Bumi Permai No.A2 No 7",
+        "Clinichours": "Open 24 hours",
+        "phone": "(031) 5914855"
+    },
+    {
+        "id": 46,
+        "name": "RSIA Cempaka Putih Permata",
+        "rating": 4.8,
+        "type": "Rumah Sakit",
+        "address": "Jl. Jambangan Kebon Agung No.8",
+        "Clinichours": "Open 24 hours",
+        "phone": "(031) 8282350"
+    },
+    {
+        "id": 47,
+        "name": "RSIA Lombok Dua Dua Surabaya",
+        "rating": 4.3,
+        "type": "Rumah Sakit Bersalin",
+        "address": "Jl. Flores No.12",
+        "Clinichours": "Open 24 hours",
+        "phone": "(031) 5022044"
+    },
+    {
+        "id": 48,
+        "name": "IBI Surabaya Maternity Hospital",
+        "rating": 4.1,
+        "type": "Rumah Sakit Bersalin",
+        "address": "Jl. Raya Dupak No.15A",
+        "Clinichours": "Open 24 hours",
+        "phone": "(031) 5323837"
+    },
+    {
+        "id": 49,
+        "name": "Rumah Sakit Umum Daerah Haji Provinsi Jawa Timur",
+        "rating": 4.6,
+        "type": "Rumah Sakit Umum",
+        "address": "Jl. Manyar Kertoadi",
+        "Clinichours": "Open 24 hours",
+        "phone": "(031) 5924000"
+    },
+    {
+        "id": 50,
+        "name": "Rumah Sakit RSIA Nur Ummi Numbi",
+        "rating": 4.8,
+        "type": "Rumah Sakit Bersalin",
+        "address": "Jl. Manukan Tengah No.4-6 Blok 51J, RW.06",
+        "Clinichours": "Open 24 hours",
+        "phone": "(031) 7404391"
+    },
+    {
+        "id": 51,
+        "name": "Instalasi Rawat Jalan RS. DR. Soetomo",
+        "rating": 4.5,
+        "type": "Rumah Sakit",
+        "address": "Jl. Dharmawangsa No.4",
+        "Clinichours": "Open 24 hours",
+        "phone": "-"
+    },
+    {
+        "id": 52,
+        "name": "Muji Rahayu Hospital",
+        "rating": 3.3,
+        "type": "Rumah Sakit Umum",
+        "address": "Jl. Raya Manukan Wetan No.68 A",
+        "Clinichours": "Open 24 hours",
+        "phone": "(031) 7404132"
+    },
+    {
+        "id": 53,
+        "name": "RS UPT Vertikal Surabaya",
+        "rating": 4.9,
+        "type": "Rumah Sakit",
+        "address": "Jl. Indrapura No.17",
+        "Clinichours": "Open 24 hours",
+        "phone": "-"
+    },
+    {
+        "id": 54,
+        "name": "Rumah Sakit Marinir Ewa Pangalila",
+        "rating": 4.1,
+        "type": "Rumah Sakit Militer",
+        "address": "MPW5+993",
+        "Clinichours": "Open 24 hours",
+        "phone": "(031) 5678094"
+    }
+]
+}

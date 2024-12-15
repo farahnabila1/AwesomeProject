@@ -1,0 +1,488 @@
+[
+  {
+    "Maps": "https://www.google.com/maps/place/Siloam+Hospitals+Surabaya/data=!4m7!3m6!1s0x2dd7fbcffbc7d2ab:0xcc071aab97d93db6!8m2!3d-7.2740112!4d112.7464397!16s%2Fg%2F1vd3y2n5!19sChIJq9LH-8_71y0Rtj3Zl6saB8w?authuser=0&hl=en&rclk=1",
+    "Nama": "Siloam Hospitals Surabaya",
+    "Rating": 4.7,
+    "Jenis": "Private hospital",
+    "Alamat": "Jl. Raya Gubeng No.70",
+    "Jam Operasional": "Open 24 hours",
+    "No. Telp": "(031) 99206900"
+  },
+  {
+    "Maps": "https://www.google.com/maps/place/National+Hospital/data=!4m7!3m6!1s0x2dd7fddca9a108b9:0xa57f34124fcee4c7!8m2!3d-7.299401!4d112.6764499!16s%2Fg%2F1pt_ylkbr!19sChIJuQihqdz91y0Rx-TOTxI0f6U?authuser=0&hl=en&rclk=1",
+    "Nama": "National Hospital",
+    "Rating": 4.5,
+    "Jenis": "Private hospital",
+    "Alamat": "Jl. Boulevard Famili Sel. No.Kav. 1",
+    "Jam Operasional": "Open 24 hours",
+    "No. Telp": "(031) 2975777"
+  },
+  {
+    "Maps": "https://www.google.com/maps/place/RS+Royal+Surabaya/data=!4m7!3m6!1s0x2dd7fb3d2d85e34b:0x447eceaea21cd258!8m2!3d-7.3289922!4d112.7508548!16s%2Fg%2F1pzqv5kd4!19sChIJS-OFLT371y0RWNIcoq7OfkQ?authuser=0&hl=en&rclk=1",
+    "Nama": "RS Royal Surabaya",
+    "Rating": 4.3,
+    "Jenis": "Private hospital",
+    "Alamat": "Jl. Rungkut Industri I No.1",
+    "Jam Operasional": "Open 24 hours",
+    "No. Telp": "(031) 8476111"
+  },
+  {
+    "Maps": "https://www.google.com/maps/place/Premier+Hospital+-+Surabaya/data=!4m7!3m6!1s0x2dd7fa55753d8395:0xc42611f831b617e6!8m2!3d-7.3044879!4d112.765249!16s%2Fg%2F1v2741yn!19sChIJlYM9dVX61y0R5he2MfgRJsQ?authuser=0&hl=en&rclk=1",
+    "Nama": "Premier Hospital - Surabaya",
+    "Rating": 4.2,
+    "Jenis": "General hospital",
+    "Alamat": "Jl. Nginden Intan Barat No.Blok B",
+    "Jam Operasional": "Open 24 hours",
+    "No. Telp": "(031) 5993211"
+  },
+  {
+    "Maps": "https://www.google.com/maps/place/Emergency+Services,+Husada+Utama+Hospital/data=!4m7!3m6!1s0x2dd7f97ddcd1efe1:0x645850deb645924b!8m2!3d-7.2653589!4d112.7560989!16s%2Fg%2F1hm22psb3!19sChIJ4e_R3H351y0RS5JFtt5QWGQ?authuser=0&hl=en&rclk=1",
+    "Nama": "Emergency Services, Husada Utama Hospital",
+    "Rating": 4.6,
+    "Jenis": "Hospital",
+    "Alamat": "Jl. Prof. DR. Moestopo No.31-35",
+    "Jam Operasional": "Open 24 hours",
+    "No. Telp": "(031) 5018335"
+  },
+  {
+    "Maps": "https://www.google.com/maps/place/Adi+Husada+Undaan+Hospital/data=!4m7!3m6!1s0x2dd7f96ea8609223:0x7be07a58f7d8ac1b!8m2!3d-7.2516239!4d112.7458645!16s%2Fg%2F121g1kmp!19sChIJI5JgqG751y0RG6zY91h64Hs?authuser=0&hl=en&rclk=1",
+    "Nama": "Adi Husada Undaan Hospital",
+    "Rating": 4.5,
+    "Jenis": "General hospital",
+    "Alamat": "Jl. Undaan Wetan No.40-44",
+    "Jam Operasional": "Open 24 hours",
+    "No. Telp": "(031) 5318000"
+  },
+  {
+    "Maps": "https://www.google.com/maps/place/RS+Bhayangkara+Surabaya+H.S+Samsoeri+Mertojoso/data=!4m7!3m6!1s0x2dd7fb693e1c6d95:0x89d6a157cb1849d0!8m2!3d-7.3246853!4d112.731507!16s%2Fg%2F11bwdrfj9s!19sChIJlW0cPmn71y0R0EkYy1eh1ok?authuser=0&hl=en&rclk=1",
+    "Nama": "RS Bhayangkara Surabaya H.S Samsoeri Mertojoso",
+    "Rating": 4.7,
+    "Jenis": "Hospital",
+    "Alamat": "Jl. Ahmad Yani No.116",
+    "Jam Operasional": "Open 24 hours",
+    "No. Telp": "(031) 8292227"
+  },
+  {
+    "Maps": "https://www.google.com/maps/place/Regional+General+Hospital+Dr.+Soetomo/data=!4m7!3m6!1s0x2dd7fbd512bf64af:0xc44b2981f167bffe!8m2!3d-7.2682064!4d112.7580663!16s%2Fg%2F12dpwtj29!19sChIJr2S_EtX71y0R_r9n8YEpS8Q?authuser=0&hl=en&rclk=1",
+    "Nama": "Regional General Hospital Dr. Soetomo",
+    "Rating": 4.1,
+    "Jenis": "Government hospital",
+    "Alamat": "Jl. Prof. DR. Moestopo No.6-8",
+    "Jam Operasional": "Open 24 hours",
+    "No. Telp": "(031) 5501078"
+  },
+  {
+    "Maps": "https://www.google.com/maps/place/Rumah+Sakit+Islam+%28RSI%29+Surabaya/data=!4m7!3m6!1s0x2dd7f963d2d4fb4d:0x4d5564dcc8032c68!8m2!3d-7.3063849!4d112.7349753!16s%2Fg%2F1tcwzyjz!19sChIJTfvU0mP51y0RaCwDyNxkVU0?authuser=0&hl=en&rclk=1",
+    "Nama": "Rumah Sakit Islam (RSI) Surabaya",
+    "Rating": 4.4,
+    "Jenis": "Hospital",
+    "Alamat": "Jl. Achmad Yani No.2-4",
+    "Jam Operasional": "Open 24 hours",
+    "No. Telp": "(031) 8284505"
+  },
+  {
+    "Maps": "https://www.google.com/maps/place/Siloam+Hospitals+Surabaya/data=!4m7!3m6!1s0x2dd7fbcffbc7d2ab:0xcc071aab97d93db6!8m2!3d-7.2740112!4d112.7464397!16s%2Fg%2F1vd3y2n5!19sChIJq9LH-8_71y0Rtj3Zl6saB8w?authuser=0&hl=en&rclk=1",
+    "Nama": "Siloam Hospitals Surabaya",
+    "Rating": 4.7,
+    "Jenis": "Private hospital",
+    "Alamat": "Jl. Raya Gubeng No.70",
+    "Jam Operasional": "Open 24 hours",
+    "No. Telp": "(031) 99206900"
+  },
+  {
+    "Maps": "https://www.google.com/maps/place/Rumah+Sakit+RS+William+Booth+Hospital+Surabaya/data=!4m7!3m6!1s0x2dd7fb95b6a2e3f5:0xcf62b06170406c4b!8m2!3d-7.2908644!4d112.7368603!16s%2Fg%2F1tdk7gvp!19sChIJ9eOitpX71y0RS2xAcGGwYs8?authuser=0&hl=en&rclk=1",
+    "Nama": "Rumah Sakit RS William Booth Hospital Surabaya",
+    "Rating": 4.6,
+    "Jenis": "General hospital",
+    "Alamat": "Jl. Diponegoro No.34",
+    "Jam Operasional": "Open 24 hours",
+    "No. Telp": "(031) 5678917"
+  },
+  {
+    "Maps": "https://www.google.com/maps/place/Rumah+Sakit+Al-Irsyad+Surabaya/data=!4m7!3m6!1s0x2dd7f91feacacdb5:0x50108354f549526c!8m2!3d-7.2280019!4d112.7403981!16s%2Fg%2F1th46hw2!19sChIJtc3K6h_51y0RbFJJ9VSDEFA?authuser=0&hl=en&rclk=1",
+    "Nama": "Rumah Sakit Al-Irsyad Surabaya",
+    "Rating": 4.6,
+    "Jenis": "Private hospital",
+    "Alamat": "Jalan KH Mas Mansyur No.210-214 dan 191",
+    "Jam Operasional": "Open 24 hours",
+    "No. Telp": "(031) 99091800"
+  },
+  {
+    "Maps": "https://www.google.com/maps/place/Mitra+Keluarga+Surabaya/data=!4m7!3m6!1s0x2dd7fe9f794adb13:0x4da089d5c4cb9016!8m2!3d-7.2668587!4d112.6913132!16s%2Fg%2F1tcy1qtt!19sChIJE9tKeZ_-1y0RFpDLxNWJoE0?authuser=0&hl=en&rclk=1",
+    "Nama": "Mitra Keluarga Surabaya",
+    "Rating": 4.7,
+    "Jenis": "Private hospital",
+    "Alamat": "Komplek Darmo Satelit, Jl. Satelit Indah II",
+    "Jam Operasional": "Open 24 hours",
+    "No. Telp": "-"
+  },
+  {
+    "Maps": "https://www.google.com/maps/place/PHC+Surabaya+Hospital/data=!4m7!3m6!1s0x2dd7f8c0fc17b42b:0x85595a043d698089!8m2!3d-7.2096489!4d112.7360983!16s%2Fg%2F11bwyxmk5p!19sChIJK7QX_MD41y0RiYBpPQRaWYU?authuser=0&hl=en&rclk=1",
+    "Nama": "PHC Surabaya Hospital",
+    "Rating": 4.4,
+    "Jenis": "Private hospital",
+    "Alamat": "Jl. Prapat Kurung Selatan No.1",
+    "Jam Operasional": "Open 24 hours",
+    "No. Telp": "(031) 3294801"
+  },
+  {
+    "Maps": "https://www.google.com/maps/place/Mayapada+Hospital+Surabaya+%28MHSB%29/data=!4m7!3m6!1s0x2dd7fb821540db4b:0xd671273095dba4b9!8m2!3d-7.292108!4d112.7277061!16s%2Fg%2F11j4bqyjsy!19sChIJS9tAFYL71y0RuaTblTAncdY?authuser=0&hl=en&rclk=1",
+    "Nama": "Mayapada Hospital Surabaya (MHSB)",
+    "Rating": 4.5,
+    "Jenis": "Hospital",
+    "Alamat": "Jl. Mayjen Sungkono No.20",
+    "Jam Operasional": "Open 24 hours",
+    "No. Telp": "(031) 99217777"
+  },
+  {
+    "Maps": "https://www.google.com/maps/place/Rumah+Sakit+Universitas+Airlangga+%28RS+UNAIR%29/data=!4m7!3m6!1s0x2dd7fbdf60c8469f:0x3036be09c9fe39b6!8m2!3d-7.2698796!4d112.7848442!16s%2Fg%2F11fp1n5g30!19sChIJn0bIYN_71y0Rtjn-yQm-NjA?authuser=0&hl=en&rclk=1",
+    "Nama": "Rumah Sakit Universitas Airlangga (RS UNAIR)",
+    "Rating": 4.3,
+    "Jenis": "University hospital",
+    "Alamat": "Jl. Dharmahusada Permai",
+    "Jam Operasional": "Open 24 hours",
+    "No. Telp": "(031) 5916290"
+  },
+  {
+    "Maps": "https://www.google.com/maps/place/RSU.+Bhakti+Rahayu+Surabaya/data=!4m7!3m6!1s0x2dd7fb648673f4db:0x46cc0f23d4f6d9c2!8m2!3d-7.3117795!4d112.7229514!16s%2Fg%2F1tmg8vgz!19sChIJ2_RzhmT71y0Rwtn21CMPzEY?authuser=0&hl=en&rclk=1",
+    "Nama": "RSU. Bhakti Rahayu Surabaya",
+    "Rating": 4,
+    "Jenis": "General hospital",
+    "Alamat": "Jl. Ketintang Madya I No.16",
+    "Jam Operasional": "Open 24 hours",
+    "No. Telp": "(031) 8295922"
+  },
+  {
+    "Maps": "https://www.google.com/maps/place/Rumah+Sakit+Umum+Gotong+Royong/data=!4m7!3m6!1s0x2dd7fa8b2beb5849:0x2f179f764f2fdfa4!8m2!3d-7.307992!4d112.787757!16s%2Fg%2F1thjq8rr!19sChIJSVjrK4v61y0RpN8vT3afFy8?authuser=0&hl=en&rclk=1",
+    "Nama": "Rumah Sakit Umum Gotong Royong",
+    "Rating": 4,
+    "Jenis": "General hospital",
+    "Alamat": "Jl. Medokan Semampir Indah No.97",
+    "Jam Operasional": "Open 24 hours",
+    "No. Telp": "0815-7453-5638"
+  },
+  {
+    "Maps": "https://www.google.com/maps/place/RS+UBAYA/data=!4m7!3m6!1s0x2dd7fb9db0fa0edd:0xcfb816f5a8b1a51b!8m2!3d-7.3141908!4d112.7657511!16s%2Fg%2F11ptv4vmpj!19sChIJ3Q76sJ371y0RG6WxqPUWuM8?authuser=0&hl=en&rclk=1",
+    "Nama": "RS UBAYA",
+    "Rating": 4.3,
+    "Jenis": "Hospital",
+    "Alamat": "Jl. Raya Panjang Jiwo Permai No.87 89",
+    "Jam Operasional": "Open 24 hours",
+    "No. Telp": "(031) 99211515"
+  },
+  {
+    "Maps": "https://www.google.com/maps/place/RSIA+Kendangsari+MERR+Surabaya/data=!4m7!3m6!1s0x2dd7f993763117a5:0x2d6208859c63be64!8m2!3d-7.2505127!4d112.7837174!16s%2Fg%2F11bcdhw1n5!19sChIJpRcxdpP51y0RZL5jnIUIYi0?authuser=0&hl=en&rclk=1",
+    "Nama": "RSIA Kendangsari MERR Surabaya",
+    "Rating": 4.7,
+    "Jenis": "Private hospital",
+    "Alamat": "Jl. Dr. Ir. H. Soekarno No.2",
+    "Jam Operasional": "Open 24 hours",
+    "No. Telp": "(031) 3814388"
+  },
+  {
+    "Maps": "https://www.google.com/maps/place/RSUD+Husada+Prima/data=!4m7!3m6!1s0x2dd7f8e24f59ec25:0xa4b6139b11a51502!8m2!3d-7.2241491!4d112.7465067!16s%2Fg%2F1hm2bh2v7!19sChIJJexZT-L41y0RAhWlEZsTtqQ?authuser=0&hl=en&rclk=1",
+    "Nama": "RSUD Husada Prima",
+    "Rating": 4.4,
+    "Jenis": "Government hospital",
+    "Alamat": "Jl. Karang Tembok No.39",
+    "Jam Operasional": "Open 24 hours",
+    "No. Telp": "(031) 3713836"
+  },
+  {
+    "Maps": "https://www.google.com/maps/place/Rumah+Sakit+%28RS%29+Mitra+Keluarga+-+Kenjeran/data=!4m7!3m6!1s0x2dd7f99315bd0d83:0x55b75f0ab9a2bce9!8m2!3d-7.2513324!4d112.7849887!16s%2Fg%2F1q6cvhm_8!19sChIJgw29FZP51y0R6byiuQpft1U?authuser=0&hl=en&rclk=1",
+    "Nama": "Rumah Sakit (RS) Mitra Keluarga - Kenjeran",
+    "Rating": 4.6,
+    "Jenis": "General hospital",
+    "Alamat": "Jl. Kenjeran No.506",
+    "Jam Operasional": "Open 24 hours",
+    "No. Telp": "(031) 99000880"
+  },
+  {
+    "Maps": "https://www.google.com/maps/place/General+Hospital+Bunda+Surabaya/data=!4m7!3m6!1s0x2dd7fe69fb6745a5:0x66893d00c7eaebce!8m2!3d-7.2517223!4d112.6504606!16s%2Fg%2F1vq89bh9!19sChIJpUVn-2n-1y0RzuvqxwA9iWY?authuser=0&hl=en&rclk=1",
+    "Nama": "General Hospital Bunda Surabaya",
+    "Rating": 4.9,
+    "Jenis": "Hospital",
+    "Alamat": "Jl. Raya Kandangan No.23-24",
+    "Jam Operasional": "Open 24 hours",
+    "No. Telp": "(031) 7442220"
+  },
+  {
+    "Maps": "https://www.google.com/maps/place/Rumah+Sakit+Adi+Husada+Kapasari/data=!4m7!3m6!1s0x2dd7f90d92efa6bf:0xeb30a16548160e38!8m2!3d-7.2427127!4d112.7520121!16s%2Fg%2F1tcx99hq!19sChIJv6bvkg351y0ROA4WSGWhMOs?authuser=0&hl=en&rclk=1",
+    "Nama": "Rumah Sakit Adi Husada Kapasari",
+    "Rating": 4.5,
+    "Jenis": "General hospital",
+    "Alamat": "Jl. Kapasari No.97-101",
+    "Jam Operasional": "Open 24 hours",
+    "No. Telp": "(031) 3764555"
+  },
+  {
+    "Maps": "https://www.google.com/maps/place/Rumah+Sakit+Islam+Darus+Syifa%27/data=!4m7!3m6!1s0x2e7800873d1d0bb3:0x8a5361c99032a8b8!8m2!3d-7.2350114!4d112.612798!16s%2Fg%2F1td_82n1!19sChIJswsdPYcAeC4RuKgykMlhU4o?authuser=0&hl=en&rclk=1",
+    "Nama": "Rumah Sakit Islam Darus Syifa'",
+    "Rating": 4.6,
+    "Jenis": "General hospital",
+    "Alamat": "Jl. Raya Benowo No.5",
+    "Jam Operasional": "Open 24 hours",
+    "No. Telp": "(031) 7406293"
+  },
+  {
+    "Maps": "https://www.google.com/maps/place/Pura+Raharja+Hospital/data=!4m7!3m6!1s0x2dd7fbc8eb96a8af:0xd0f03d3a6ab5ec!8m2!3d-7.2832379!4d112.7527409!16s%2Fg%2F1tdg0mxl!19sChIJr6iW68j71y0R7LVqOj3w0AA?authuser=0&hl=en&rclk=1",
+    "Nama": "Pura Raharja Hospital",
+    "Rating": 4.6,
+    "Jenis": "General hospital",
+    "Alamat": "Jl. Pucang Adi No.12-14",
+    "Jam Operasional": "Open 24 hours",
+    "No. Telp": "(031) 5019898"
+  },
+  {
+    "Maps": "https://www.google.com/maps/place/St.+Vincentius+A+Paulo+Catholic+Hospital/data=!4m7!3m6!1s0x2dd7fb9688b7ab1f:0xac0ca44d40953e56!8m2!3d-7.2912236!4d112.7361845!16s%2Fg%2F120wl3yj!19sChIJH6u3iJb71y0RVj6VQE2kDKw?authuser=0&hl=en&rclk=1",
+    "Nama": "St. Vincentius A Paulo Catholic Hospital",
+    "Rating": 4.2,
+    "Jenis": "Private hospital",
+    "Alamat": "Jl. Diponegoro No.51",
+    "Jam Operasional": "Open 24 hours",
+    "No. Telp": "(031) 5677562"
+  },
+  {
+    "Maps": "https://www.google.com/maps/place/RSPAL+dr+RAMELAN+SURABAYA/data=!4m7!3m6!1s0x2dd7fba09c1d54ad:0x2d5ff9393bb83933!8m2!3d-7.309672!4d112.7381124!16s%2Fg%2F1q5grtfrs!19sChIJrVQdnKD71y0RMzm4Ozn5Xy0?authuser=0&hl=en&rclk=1",
+    "Nama": "RSPAL dr RAMELAN SURABAYA",
+    "Rating": 4.3,
+    "Jenis": "Military hospital",
+    "Alamat": "Jl. Gadung No.1",
+    "Jam Operasional": "Open 24 hours",
+    "No. Telp": "(031) 8438153"
+  },
+  {
+    "Maps": "https://www.google.com/maps/place/Rumah+Sakit+RSIA+GRAHA+MEDIKA/data=!4m7!3m6!1s0x2dd7fcf7a34440dd:0x82c804f2da443837!8m2!3d-7.3123728!4d112.6815792!16s%2Fg%2F11bw4w4lnp!19sChIJ3UBEo_f81y0RNzhE2vIEyII?authuser=0&hl=en&rclk=1",
+    "Nama": "Rumah Sakit RSIA GRAHA MEDIKA",
+    "Rating": 4.6,
+    "Jenis": "Maternity hospital",
+    "Alamat": "Graha Sampurna Indah, Jl. Raya Babatan Sampurna No.22",
+    "Jam Operasional": "Open 24 hours",
+    "No. Telp": "(031) 7523434"
+  },
+  {
+    "Maps": "https://www.google.com/maps/place/Rumah+Sakit+%28RS%29+Darmo/data=!4m7!3m6!1s0x2dd7fbbd882feb8f:0xc3a7a2d586688f99!8m2!3d-7.287414!4d112.73766!16s%2Fg%2F120p4f_z!19sChIJj-sviL371y0RmY9ohtWip8M?authuser=0&hl=en&rclk=1",
+    "Nama": "Rumah Sakit (RS) Darmo",
+    "Rating": 4.3,
+    "Jenis": "Hospital",
+    "Alamat": "Jl. Raya Darmo No.90",
+    "Jam Operasional": "Open 24 hours",
+    "No. Telp": "(031) 5676253"
+  },
+  {
+    "Maps": "https://www.google.com/maps/place/RS+PKU+Muhammadiyah+Surabaya/data=!4m7!3m6!1s0x2dd7f91f0e02a113:0x7a7a9b402febcbff!8m2!3d-7.229892!4d112.7411918!16s%2Fg%2F1tv6t7f4!19sChIJE6ECDh_51y0R_8vrL0Cbeno?authuser=0&hl=en&rclk=1",
+    "Nama": "RS PKU Muhammadiyah Surabaya",
+    "Rating": 4.3,
+    "Jenis": "Hospital",
+    "Alamat": "Jl. KH Mas Mansyur No.180 - 182",
+    "Jam Operasional": "Open 24 hours",
+    "No. Telp": "0823-1126-2646"
+  },
+  {
+    "Maps": "https://www.google.com/maps/place/Rumah+Sakit+RS+Wijaya+Surabaya/data=!4m7!3m6!1s0x2dd7fc8b2dec6cbb:0x240ceec81c029b8!8m2!3d-7.3130939!4d112.6917745!16s%2Fg%2F1w3sx362!19sChIJu2zsLYv81y0RuCnAgezOQAI?authuser=0&hl=en&rclk=1",
+    "Nama": "Rumah Sakit RS Wijaya Surabaya",
+    "Rating": 3.8,
+    "Jenis": "General hospital",
+    "Alamat": "Jl. Raya Menganti No.398",
+    "Jam Operasional": "Open 24 hours",
+    "No. Telp": "(031) 7523087"
+  },
+  {
+    "Maps": "https://www.google.com/maps/place/RS+Wiyung+Sejahtera/data=!4m7!3m6!1s0x2dd7fcf59d612f09:0x69b12dd5790d12d5!8m2!3d-7.311233!4d112.6880828!16s%2Fg%2F1hm1xlgd3!19sChIJCS9hnfX81y0R1RINedUtsWk?authuser=0&hl=en&rclk=1",
+    "Nama": "RS Wiyung Sejahtera",
+    "Rating": 4.2,
+    "Jenis": "Hospital",
+    "Alamat": "Jl. Karangan Pdam No.1-3",
+    "Jam Operasional": "Open 24 hours",
+    "No. Telp": "(031) 7532653"
+  },
+  {
+    "Maps": "https://www.google.com/maps/place/Dr.+Mohamad+Soewandhie+Regional+General+Hospital/data=!4m7!3m6!1s0x2dd7f974b6b49d89:0x28a28cca455fbd85!8m2!3d-7.2459744!4d112.7580038!16s%2Fg%2F1tfysnbf!19sChIJiZ20tnT51y0Rhb1fRcqMoig?authuser=0&hl=en&rclk=1",
+    "Nama": "Dr. Mohamad Soewandhie Regional General Hospital",
+    "Rating": 3.6,
+    "Jenis": "Government hospital",
+    "Alamat": "Jl. Tambak Rejo No.45-47",
+    "Jam Operasional": "Open 24 hours",
+    "No. Telp": "(031) 3717141"
+  },
+  {
+    "Maps": "https://www.google.com/maps/place/Surabaya+Medical+Service+Hospital/data=!4m7!3m6!1s0x2dd7fbbfaf71396b:0x24011d9b0aa75d25!8m2!3d-7.289055!4d112.741496!16s%2Fg%2F11b6d297fm!19sChIJazlxr7_71y0RJV2nCpsdASQ?authuser=0&hl=en&rclk=1",
+    "Nama": "Surabaya Medical Service Hospital",
+    "Rating": 4.1,
+    "Jenis": "Hospital",
+    "Alamat": "Jl. Kapuas No.2",
+    "Jam Operasional": "Open 24 hours",
+    "No. Telp": "0821-3988-2229"
+  },
+  {
+    "Maps": "https://www.google.com/maps/place/Rumah+Sakit+Manyar+Medical+Centre/data=!4m7!3m6!1s0x2dd7fbb2d67ea183:0xcdc237d90586d1c!8m2!3d-7.289889!4d112.763083!16s%2Fg%2F1hc2d661p!19sChIJg6F-1rL71y0RHG1YkH0j3Aw?authuser=0&hl=en&rclk=1",
+    "Nama": "Rumah Sakit Manyar Medical Centre",
+    "Rating": 4.2,
+    "Jenis": "Hospital",
+    "Alamat": "Jl. Raya Manyar No.9",
+    "Jam Operasional": "Open 24 hours",
+    "No. Telp": "(031) 5999339"
+  },
+  {
+    "Maps": "https://www.google.com/maps/place/Rumah+Sakit+Tk.III+Brawijaya/data=!4m7!3m6!1s0x2dd7fb8f15e243c1:0xe9b89a7e8b401e75!8m2!3d-7.2971309!4d112.7232731!16s%2Fg%2F1hm2cjzvp!19sChIJwUPiFY_71y0RdR5Ai36auOk?authuser=0&hl=en&rclk=1",
+    "Nama": "Rumah Sakit Tk.III Brawijaya",
+    "Rating": 4.1,
+    "Jenis": "Military hospital",
+    "Alamat": "Jl. Kesatriyan No.17",
+    "Jam Operasional": "Open 24 hours",
+    "No. Telp": "(031) 5668343"
+  },
+  {
+    "Maps": "https://www.google.com/maps/place/Rumah+Sakit+Ibu+dan+Anak+Kendangsari/data=!4m7!3m6!1s0x2dd7fb167cf91527:0xf4ee88a1d43ce60c!8m2!3d-7.3253334!4d112.7453578!16s%2Fg%2F11r9bldb7!19sChIJJxX5fBb71y0RDOY81KGI7vQ?authuser=0&hl=en&rclk=1",
+    "Nama": "Rumah Sakit Ibu dan Anak Kendangsari",
+    "Rating": 4.5,
+    "Jenis": "Private hospital",
+    "Alamat": "Jl. Raya Kendangsari No.38",
+    "Jam Operasional": "Open 24 hours",
+    "No. Telp": "(031) 8436200"
+  },
+  {
+    "Maps": "https://www.google.com/maps/place/Rumah+Sakit+Rumkit+Soemitro+Lanud+Mulyono/data=!4m7!3m6!1s0x2dd7fbbe6db283f1:0xacdc7b8ded208e8b!8m2!3d-7.2915134!4d112.7408637!16s%2Fg%2F11fz7rn0v3!19sChIJ8YOybb771y0Ri44g7Y173Kw?authuser=0&hl=en&rclk=1",
+    "Nama": "Rumah Sakit Rumkit Soemitro Lanud Mulyono",
+    "Rating": 4.5,
+    "Jenis": "Hospital",
+    "Alamat": "Jl. Serayu No.17",
+    "Jam Operasional": "Open 24 hours",
+    "No. Telp": "(031) 5669514"
+  },
+  {
+    "Maps": "https://www.google.com/maps/place/%22Putri%22+Maternity+Hospital/data=!4m7!3m6!1s0x2dd7fa416493b75b:0x2c05cff0e662978d!8m2!3d-7.2909532!4d112.7826708!16s%2Fg%2F1tcvlpx7!19sChIJW7eTZEH61y0RjZdi5vDPBSw?authuser=0&hl=en&rclk=1",
+    "Nama": "Putri\" Maternity Hospital",
+    "Rating": 4.4,
+    "Jenis": "Children's hospital",
+    "Alamat": "Jl. Arief Rahman Hakim No.130",
+    "Jam Operasional": "Open 24 hours",
+    "No. Telp": "(031) 5999987"
+  },
+  {
+    "Maps": "https://www.google.com/maps/place/Hospital+Bunda+Morula+Surabaya+%28BMS%29/data=!4m7!3m6!1s0x2dd7f95fbd6fcd45:0x68e372c32047b3d7!8m2!3d-7.2660837!4d112.736944!16s%2Fg%2F1hm2jx5b2!19sChIJRc1vvV_51y0R17NHIMNy42g?authuser=0&hl=en&rclk=1",
+    "Nama": "Hospital Bunda Morula Surabaya (BMS)",
+    "Rating": 4.8,
+    "Jenis": "Maternity hospital",
+    "Alamat": "Jl. Tegalsari No.59",
+    "Jam Operasional": "Open 24 hours",
+    "No. Telp": "(031) 30008000"
+  },
+  {
+    "Maps": "https://www.google.com/maps/place/Jemursari+Islamic+Hospital+-+Surabaya/data=!4m7!3m6!1s0x2dd7fb15205d9ac3:0xc680c9ec1a4404ab!8m2!3d-7.3226354!4d112.739767!16s%2Fg%2F1tggdwk4!19sChIJw5pdIBX71y0RqwREGuzJgMY?authuser=0&hl=en&rclk=1",
+    "Nama": "Jemursari Islamic Hospital - Surabaya",
+    "Rating": 3.7,
+    "Jenis": "Private hospital",
+    "Alamat": "Jl. Raya Jemursari No.51-57",
+    "Jam Operasional": "Open 24 hours",
+    "No. Telp": "(031) 8471877"
+  },
+  {
+    "Maps": "https://www.google.com/maps/place/Emergency+Unit+of+DKT+Gubeng+Corner+Hospital/data=!4m7!3m6!1s0x2dd7f97d377ea263:0xb52c01c7ef60a7f3!8m2!3d-7.2651263!4d112.7516133!16s%2Fg%2F1hm41wwc8!19sChIJY6J-N3351y0R86dg78cBLLU?authuser=0&hl=en&rclk=1",
+    "Nama": "Emergency Unit of DKT Gubeng Corner Hospital",
+    "Rating": 3.9,
+    "Jenis": "Maternity hospital",
+    "Alamat": "Jl. Gubeng Pojok No.21",
+    "Jam Operasional": "Open 24 hours",
+    "No. Telp": "(031) 5464215"
+  },
+  {
+    "Maps": "https://www.google.com/maps/place/Rumah+Sakit+Umum+Daerah+Bhakti+Dharma+Husada/data=!4m7!3m6!1s0x2dd7fe16e164c689:0x116e90eb08d8c043!8m2!3d-7.2555336!4d112.6356218!16s%2Fg%2F1hm3n8_cn!19sChIJicZk4Rb-1y0RQ8DYCOuQbhE?authuser=0&hl=en&rclk=1",
+    "Nama": "Rumah Sakit Umum Daerah Bhakti Dharma Husada",
+    "Rating": 4.6,
+    "Jenis": "General hospital",
+    "Alamat": "Jl. Kendung No.115-117",
+    "Jam Operasional": "Open 24 hours",
+    "No. Telp": "(031) 7409135"
+  },
+  {
+    "Maps": "https://www.google.com/maps/place/Rumah+Sakit+Onkologi+Surabaya/data=!4m7!3m6!1s0x2dd7f961b13fc377:0x5ea60a2ee0505a15!8m2!3d-7.290787!4d112.789378!16s%2Fg%2F1td5tkxd!19sChIJd8M_sWH51y0RFVpQ4C4Kpl4?authuser=0&hl=en&rclk=1",
+    "Nama": "Rumah Sakit Onkologi Surabaya",
+    "Rating": 4.4,
+    "Jenis": "Specialized hospital",
+    "Alamat": "Araya, A2 No 7, Jl. Galaxy Bumi Permai No.A2 No 7",
+    "Jam Operasional": "Open 24 hours",
+    "No. Telp": "(031) 5914855"
+  },
+  {
+    "Maps": "https://www.google.com/maps/place/RSIA+Cempaka+Putih+Permata/data=!4m7!3m6!1s0x2dd7fc9d9ea56d4b:0x81d5a6f964b39235!8m2!3d-7.3215713!4d112.714057!16s%2Fg%2F1v1ks500!19sChIJS22lnp381y0RNZKzZPmm1YE?authuser=0&hl=en&rclk=1",
+    "Nama": "RSIA Cempaka Putih Permata",
+    "Rating": 4.8,
+    "Jenis": "Hospital",
+    "Alamat": "Jl. Jambangan Kebon Agung No.8",
+    "Jam Operasional": "Open 24 hours",
+    "No. Telp": "(031) 8282350"
+  },
+  {
+    "Maps": "https://www.google.com/maps/place/RSIA+Lombok+Dua+Dua+Surabaya/data=!4m7!3m6!1s0x2dd7fbc511c9351d:0x3e8d2d98dc18e8f5!8m2!3d-7.278481!4d112.748947!16s%2Fg%2F1v2034gp!19sChIJHTXJEcX71y0R9egY3JgtjT4?authuser=0&hl=en&rclk=1",
+    "Nama": "RSIA Lombok Dua Dua Surabaya",
+    "Rating": 4.3,
+    "Jenis": "Maternity hospital",
+    "Alamat": "Jl. Flores No.12",
+    "Jam Operasional": "Open 24 hours",
+    "No. Telp": "(031) 5022044"
+  },
+  {
+    "Maps": "https://www.google.com/maps/place/IBI+Surabaya+Maternity+Hospital/data=!4m7!3m6!1s0x2dd7f9379735a67f:0xf20addd17857054f!8m2!3d-7.245351!4d112.727859!16s%2Fg%2F1tz273_y!19sChIJf6Y1lzf51y0RTwVXeNHdCvI?authuser=0&hl=en&rclk=1",
+    "Nama": "IBI Surabaya Maternity Hospital",
+    "Rating": 4.1,
+    "Jenis": "Maternity hospital",
+    "Alamat": "Jl. Raya Dupak No.15A",
+    "Jam Operasional": "Open 24 hours",
+    "No. Telp": "(031) 5323837"
+  },
+  {
+    "Maps": "https://www.google.com/maps/place/Rumah+Sakit+Umum+Daerah+Haji+Provinsi+Jawa+Timur/data=!4m7!3m6!1s0x2dd7fa3921ca1e3b:0xc8445a31f40b782c!8m2!3d-7.2833287!4d112.7796844!16s%2Fg%2F1hf04q2b8!19sChIJOx7KITn61y0RLHgL9DFaRMg?authuser=0&hl=en&rclk=1",
+    "Nama": "Rumah Sakit Umum Daerah Haji Provinsi Jawa Timur",
+    "Rating": 4.6,
+    "Jenis": "General hospital",
+    "Alamat": "Jl. Manyar Kertoadi",
+    "Jam Operasional": "Closed",
+    "No. Telp": "(031) 5924000"
+  },
+  {
+    "Maps": "https://www.google.com/maps/place/Rumah+Sakit+RSIA+Nur+Ummi+Numbi/data=!4m7!3m6!1s0x2dd7fe7c733a45f5:0xd08a5484b9b04c69!8m2!3d-7.264807!4d112.662077!16s%2Fg%2F11g8b3hkch!19sChIJ9UU6c3z-1y0RaUywuYRUitA?authuser=0&hl=en&rclk=1",
+    "Nama": "Rumah Sakit RSIA Nur Ummi Numbi",
+    "Rating": 4.8,
+    "Jenis": "Maternity hospital",
+    "Alamat": "Jl. Manukan Tengah No.4-6 Blok 51J, RW.06",
+    "Jam Operasional": "Open 24 hours",
+    "No. Telp": "(031) 7404391"
+  },
+  {
+    "Maps": "https://www.google.com/maps/place/Instalasi+Rawat+Jalan+RS.+DR.+Soetomo/data=!4m7!3m6!1s0x2dd7fbd607d81cf1:0xe907b7b1716cd424!8m2!3d-7.2668651!4d112.7568339!16s%2Fg%2F11fy4v6m6b!19sChIJ8RzYB9b71y0RJNRscbG3B-k?authuser=0&hl=en&rclk=1",
+    "Nama": "Instalasi Rawat Jalan RS. DR. Soetomo",
+    "Rating": 4.5,
+    "Jenis": "Hospital",
+    "Alamat": "Jl. Dharmawangsa No.4",
+    "Jam Operasional": "Open 24 hours",
+    "No. Telp": "-"
+  },
+  {
+    "Maps": "https://www.google.com/maps/place/Muji+Rahayu+Hospital/data=!4m7!3m6!1s0x2dd7fe8a3342145f:0xd334d6c8f824b60b!8m2!3d-7.257172!4d112.670966!16s%2Fg%2F1tcy_mw3!19sChIJXxRCM4r-1y0RC7Yk-MjWNNM?authuser=0&hl=en&rclk=1",
+    "Nama": "Muji Rahayu Hospital",
+    "Rating": 3.3,
+    "Jenis": "General hospital",
+    "Alamat": "Jl. Raya Manukan Wetan No.68 A",
+    "Jam Operasional": "Open 24 hours",
+    "No. Telp": "(031) 7404132"
+  },
+  {
+    "Maps": "https://www.google.com/maps/place/RS+UPT+Vertikal+Surabaya/data=!4m7!3m6!1s0x2dd7f9000ba0be07:0x417ad8802207f792!8m2!3d-7.2403292!4d112.7315062!16s%2Fg%2F11vpr4nmr4!19sChIJB76gCwD51y0RkvcHIoDYekE?authuser=0&hl=en&rclk=1",
+    "Nama": "RS UPT Vertikal Surabaya",
+    "Rating": 4.9,
+    "Jenis": "Hospital",
+    "Alamat": "Jl. Indrapura No.17",
+    "Jam Operasional": "Closed",
+    "No. Telp": "-"
+  },
+  {
+    "Maps": "https://www.google.com/maps/place/Rumah+Sakit+Marinir+Ewa+Pangalila/data=!4m7!3m6!1s0x2dd7fc7c1242bafb:0xa9a0c7b22a5802c9!8m2!3d-7.3041179!4d112.7084213!16s%2Fg%2F1td_828j!19sChIJ-7pCEnz81y0RyQJYKrLHoKk?authuser=0&hl=en&rclk=1",
+    "Nama": "Rumah Sakit Marinir Ewa Pangalila",
+    "Rating": 4.1,
+    "Jenis": "Military hospital",
+    "Alamat": "MPW5+993",
+    "Jam Operasional": "Open 24 hours",
+    "No. Telp": "(031) 5678094"
+  }
+]

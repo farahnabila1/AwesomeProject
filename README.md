@@ -1,79 +1,81 @@
-This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
+Nama Produk
+CareLink - Aplikasi Kesehatan
+📝 Deskripsi Produk
+CareLink adalah aplikasi mobile berbasis React Native yang dirancang untuk memudahkan pengguna dalam mengakses informasi dan data rumah sakit atau fasilitas kesehatan. Aplikasi ini memungkinkan pengguna untuk melihat detail rumah sakit seperti alamat, rating, dan informasi kontak, serta melakukan pembaruan data rumah sakit dengan cepat dan mudah.
 
-# Getting Started
+⚙️ Komponen Pembangun Produk
+1. Createdata
+Komponen untuk mengedit informasi rumah sakit melalui formulir interaktif yang terhubung dengan server menggunakan REST API.
+Fitur: Memilih rumah sakit, mengisi data seperti nama, rating, alamat, nomor telepon, dan jam operasional.
+2. LinkList
+Komponen ini berfungsi untuk menampilkan daftar tautan ke berbagai platform sosial media untuk memudahkan komunikasi dan konektivitas.
+Platform yang didukung: LinkedIn, Instagram, WhatsApp, GitHub.
+3. Header
+Bagian header dengan latar belakang bergambar dan informasi aplikasi "CareLink".
+Mendesain kesan profesional dan modern dengan tema responsif berdasarkan mode gelap atau terang.
+4. App.tsx
+Komponen utama yang mengintegrasikan semua komponen seperti Header, Createdata, dan LinkList dalam satu tampilan aplikasi.
+🌍 Sumber Data
+Aplikasi ini menggunakan data dari server lokal menggunakan endpoint API seperti:
 
->**Note**: Make sure you have completed the [React Native - Environment Setup](https://reactnative.dev/docs/environment-setup) instructions till "Creating a new application" step, before proceeding.
+http://192.168.56.41:3000/rumahsakit
+Teknologi yang Digunakan
 
-## Step 1: Start the Metro Server
+React Native
+REST API dengan metode GET dan PATCH untuk komunikasi data
+Font Awesome untuk ikon visual
+Styled components untuk desain UI
+📸 Tangkapan Layar
+Tampilan Awal - Header
 
-First, you will need to start **Metro**, the JavaScript _bundler_ that ships _with_ React Native.
+Formulir Edit Data Rumah Sakit
 
-To start Metro, run the following command from the _root_ of your React Native project:
+Daftar Rumah Sakit
 
-```bash
-# using npm
+Daftar Tautan Sosial Media
+
+🛠️ Cara Menjalankan Proyek Ini
+Persyaratan
+Sebelum menjalankan aplikasi, pastikan Anda memiliki hal-hal berikut:
+
+Node.js dan npm atau Yarn sudah terinstal di komputer Anda.
+Emulator Android/iOS atau perangkat fisik dengan React Native.
+Instalasi
+bash
+Copy code
+# Clone repositori ini
+git clone https://github.com/username/repository.git
+
+# Masuk ke direktori proyek
+cd CareLink
+
+# Instalasi dependensi
+npm install
+# atau
+yarn install
+Jalankan Proyek
+Untuk memulai proyek di emulator atau perangkat Anda:
+
+bash
+Copy code
 npm start
-
-# OR using Yarn
+# atau
 yarn start
-```
+Lalu, untuk menjalankan aplikasi di emulator Android/iOS:
 
-## Step 2: Start your Application
-
-Let Metro Bundler run in its _own_ terminal. Open a _new_ terminal from the _root_ of your React Native project. Run the following command to start your _Android_ or _iOS_ app:
-
-### For Android
-
-```bash
-# using npm
+bash
+Copy code
 npm run android
-
-# OR using Yarn
-yarn android
-```
-
-### For iOS
-
-```bash
-# using npm
+# atau
 npm run ios
+📜 Lisensi
+Aplikasi ini dibuat untuk keperluan studi dan pendidikan. Anda dapat menggunakannya dengan referensi ke pemilik kode.
 
-# OR using Yarn
-yarn ios
-```
+💬 Kontak
+Jika Anda memiliki pertanyaan atau saran, silakan hubungi saya:
 
-If everything is set up _correctly_, you should see your new app running in your _Android Emulator_ or _iOS Simulator_ shortly provided you have set up your emulator/simulator correctly.
+📧 [Email Anda]
+👩‍💻 GitHub Anda
 
-This is one way to run your app — you can also run it directly from within Android Studio and Xcode respectively.
+Terima kasih sudah melihat proyek ini! Semoga bermanfaat! 🚀
 
-## Step 3: Modifying your App
-
-Now that you have successfully run the app, let's modify it.
-
-1. Open `App.tsx` in your text editor of choice and edit some lines.
-2. For **Android**: Press the <kbd>R</kbd> key twice or select **"Reload"** from the **Developer Menu** (<kbd>Ctrl</kbd> + <kbd>M</kbd> (on Window and Linux) or <kbd>Cmd ⌘</kbd> + <kbd>M</kbd> (on macOS)) to see your changes!
-
-   For **iOS**: Hit <kbd>Cmd ⌘</kbd> + <kbd>R</kbd> in your iOS Simulator to reload the app and see your changes!
-
-## Congratulations! :tada:
-
-You've successfully run and modified your React Native App. :partying_face:
-
-### Now what?
-
-- If you want to add this new React Native code to an existing application, check out the [Integration guide](https://reactnative.dev/docs/integration-with-existing-apps).
-- If you're curious to learn more about React Native, check out the [Introduction to React Native](https://reactnative.dev/docs/getting-started).
-
-# Troubleshooting
-
-If you can't get this to work, see the [Troubleshooting](https://reactnative.dev/docs/troubleshooting) page.
-
-# Learn More
-
-To learn more about React Native, take a look at the following resources:
-
-- [React Native Website](https://reactnative.dev) - learn more about React Native.
-- [Getting Started](https://reactnative.dev/docs/environment-setup) - an **overview** of React Native and how setup your environment.
-- [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
-- [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
-- [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.

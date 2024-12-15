@@ -1,21 +1,19 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState } from 'react';
 import { SafeAreaView, View, TextInput, Button, StyleSheet, Text, FlatList, TouchableOpacity } from 'react-native';
-import { ScrollView } from 'react-native-virtualized-view';
 import { FontAwesomeIcon } from '@fortawesome/react-native-fontawesome';
-import { faPenToSquare, faGraduationCap } from '@fortawesome/free-solid-svg-icons';
+import { faPenToSquare, faGraduationCap, faHospital } from '@fortawesome/free-solid-svg-icons';
 
 const Createdata = () => {
-    const jsonUrl = 'http://10.0.2.2:3000/mahasiswa';
-    const [first_name, setFirstName] = useState('');
-    const [last_name, setLastName] = useState('');
-    const [kelas, setKelas] = useState('');
-    const [gender, setGender] = useState('');
-    const [email, setEmail] = useState('');
-
-    const [selectedUser, setSelectedUser] = useState({});
-
+    const jsonUrl = 'http://192.168.56.41:3000/rumahsakit';
+    const [name, setName] = useState('');
+    const [rating, setRating] = useState('');
+    const [type, setType] = useState('');
+    const [address, setAddress] = useState('');
+    const [clinicHours, setClinicHours] = useState('');
+    const [phone, setPhone] = useState('');
+    const [selectedHospital, setSelectedHospital] = useState(null);
     const [isLoading, setLoading] = useState(true);
-    const [dataUser, setDataUser] = useState([]);
+    const [hospitalList, setHospitalList] = useState([]);
     const [refresh, setRefresh] = useState(false);
 
     const fetchData = () => {
@@ -23,7 +21,7 @@ const Createdata = () => {
         fetch(jsonUrl)
             .then((response) => response.json())
             .then((json) => {
-                setDataUser(json);
+                setHospitalList(json);
             })
             .catch((error) => console.error(error))
             .finally(() => setLoading(false));
@@ -40,164 +38,200 @@ const Createdata = () => {
     };
 
     const selectItem = (item) => {
-        setSelectedUser(item);
-        setFirstName(item.first_name);
-        setLastName(item.last_name);
-        setKelas(item.kelas);
-        setGender(item.gender);
-        setEmail(item.email);
-    }
+        setSelectedHospital(item);
+        setName(item.name);
+        setRating(item.rating);
+        setType(item.type);
+        setAddress(item.address);
+        setClinicHours(item.clinicHours);
+        setPhone(item.phone);
+    };
+
+    const validateRating = (value) => {
+        const numericRegex = /^[0-9]*\.?[0-9]*$/;
+        if (numericRegex.test(value)) {
+            setRating(value);
+        }
+    };
+
+    const validatePhone = (value) => {
+        const phoneRegex = /^[0-9()\-.]*$/;
+        if (phoneRegex.test(value)) {
+            setPhone(value);
+        }
+    };
 
     const submit = () => {
+        if (!selectedHospital) {
+            alert('No hospital selected');
+            return;
+        }
+
         const data = {
-            first_name: first_name,
-            last_name: last_name,
-            email: email,
-            kelas: kelas,
-            gender: gender,
+            name: name,
+            rating: rating,
+            type: type,
+            address: address,
+            clinicHours: clinicHours,
+            phone: phone,
         };
-        fetch(`http://10.0.2.2:3000/mahasiswa/${selectedUser.id}`, {
+
+        fetch(`${jsonUrl}/${selectedHospital.id}`, {
             method: 'PATCH',
             headers: {
                 'Accept': 'application/json',
-                'Content-Type': 'application/json'
+                'Content-Type': 'application/json',
             },
-            body: JSON.stringify(data)
+            body: JSON.stringify(data),
         })
             .then((response) => response.json())
-            .then((json) => {
-                console.log(json);
-                alert('Data tersimpan');
-                setFirstName('');
-                setLastName('');
-                setKelas('');
-                setGender('');
-                setEmail('');
+            .then(() => {
+                alert('Data updated successfully');
+                setName('');
+                setRating('');
+                setType('');
+                setAddress('');
+                setClinicHours('');
+                setPhone('');
+                setSelectedHospital(null);
                 refreshPage();
-                FlatList.refresh();
             })
-    }
+            .catch((error) => console.error(error));
+    };
 
     return (
-        <SafeAreaView>
-            <View>
+        <SafeAreaView style={{ flex: 1 }}>
+            <View style={{ flex: 1 }}>
                 {isLoading ? (
                     <View style={{ alignItems: 'center', marginTop: 20 }}>
                         <Text style={styles.cardtitle}>Loading...</Text>
                     </View>
                 ) : (
-                    <View>
-                        <View>
-                            <Text style={styles.title}>Edit Data Mahasiswa</Text>
-                            <View style={styles.form}>
-                                <TextInput style={styles.input} placeholder="Nama Depan" value={first_name} onChangeText={(value) => setFirstName(value)} />
-                                <TextInput style={styles.input} placeholder="Nama Belakang" value={last_name} onChangeText={(value) => setLastName(value)} />
-                                <TextInput style={styles.input} placeholder="Kelas" value={kelas} onChangeText={(value) => setKelas(value)} />
-                                <TextInput style={styles.input} placeholder="Jenis Kelamin" value={gender} onChangeText={(value) => setGender(value)} />
-                                <TextInput style={styles.input} placeholder="Email" value={email} onChangeText={(value) => setEmail(value)} />
-                                <Button title="Edit" style={styles.button} onPress={submit} />
-                            </View>
-                        </View>
-                        <View style={styles.devider}></View>
-                        <ScrollView>
-                            <FlatList
-                                style={{ marginBottom: 10 }}
-                                data={dataUser}
-                                onRefresh={() => { refreshPage() }}
-                                refreshing={refresh}
-                                keyExtractor={({ id }, index) => id}
-                                renderItem={({ item }) => (
-                                    <View>
-                                        <TouchableOpacity onPress={() => selectItem(item)}>
-                                            <View style={styles.card}>
-                                                <View style={styles.avatar}>
-                                                    <FontAwesomeIcon icon={faGraduationCap} size={50} />
-                                                </View>
-                                                <View>
-                                                    <Text style={styles.cardtitle}>{item.first_name} {item.first_name}</Text>
-                                                    <Text>{item.kelas}</Text>
-                                                    <Text>{item.gender}</Text>
-                                                </View>
-                                                <View style={{ flex: 1, justifyContent: 'center', alignItems: 'flex-end' }}>
-                                                    <FontAwesomeIcon icon={faPenToSquare} size={20} />
-                                                </View>
-                                            </View>
-                                        </TouchableOpacity>
-                                    </View>
-                                )}
+                    <View style={{ flex: 1 }}>
+                        <View style={styles.form}>
+                            <TextInput
+                                style={styles.input}
+                                placeholder="Nama Rumah Sakit"
+                                value={name}
+                                onChangeText={setName}
                             />
-                        </ScrollView>
+                            <TextInput
+                                style={styles.input}
+                                placeholder="Tipe"
+                                value={type}
+                                onChangeText={setType}
+                            />
+                            <TextInput
+                                style={styles.input}
+                                placeholder="Alamat"
+                                value={address}
+                                onChangeText={setAddress}
+                            />
+                            <TextInput
+                                style={styles.input}
+                                placeholder="Nomor Telepon"
+                                value={phone}
+                                onChangeText={validatePhone}
+                                keyboardType="phone-pad"
+                            />
+                            <TouchableOpacity style={styles.button} onPress={submit}>
+                                <Text style={styles.buttonText}>Edit</Text>
+                            </TouchableOpacity>
+                        </View>
+                        <FlatList
+                            style={{ marginBottom: 10 }}
+                            data={hospitalList}
+                            onRefresh={refreshPage}
+                            refreshing={refresh}
+                            keyExtractor={(item) => item.id.toString()}
+                            renderItem={({ item }) => (
+                                <TouchableOpacity onPress={() => selectItem(item)}>
+                                    <View style={styles.card}>
+                                        <View style={styles.avatar}>
+                                            <FontAwesomeIcon icon={faHospital} size={50} />
+                                        </View>
+                                        <View>
+                                            <Text style={styles.cardtitle}>{item.name}</Text>
+                                            <Text>{item.type}</Text>
+                                            <Text>{item.address}</Text>
+                                            <Text>{item.phone}</Text>
+                                            <Text>⭐ {item.rating}</Text>
+                                            
+                                        </View>
+                                        <View style={{ flex: 1, justifyContent: 'center', alignItems: 'flex-end' }}>
+                                            <FontAwesomeIcon icon={faPenToSquare} size={20} />
+                                        </View>
+                                    </View>
+                                </TouchableOpacity>
+                            )}
+                        />
                     </View>
                 )}
             </View>
         </SafeAreaView>
-    )
-}
+    );
+};
 
-export default Createdata
+export default Createdata;
 
 const styles = StyleSheet.create({
-    title: {
-        paddingVertical: 12,
-        backgroundColor: '#333',
-        color: 'white',
-        fontSize: 20,
-        fontWeight: 'bold',
-        textAlign: 'center',
-    },
     form: {
-        padding: 10,
-        marginBottom: 100,
+        padding: 15,
+        backgroundColor: '#fff',
+        borderRadius: 10,
+        margin: 10,
+        elevation: 2,
+        shadowColor: '#000',
+        shadowOffset: { width: 0, height: 2 },
+        shadowOpacity: 0.2,
+        shadowRadius: 4,
     },
     input: {
         borderWidth: 1,
-        borderColor: '#777',
+        borderColor: '#ccc',
         borderRadius: 8,
-        padding: 8,
-        width: '100%',
-        marginVertical: 5,
-    },
-    button: {
-        marginVertical: 10,
-    },
-    title: {
-        paddingVertical: 12,
-        backgroundColor: '#333',
-        color: 'white',
-        fontSize: 20,
-        fontWeight: 'bold',
-        textAlign: 'center',
-    },
-    form: {
         padding: 10,
-        marginBottom: 10,
-    },
-    input: {
-        borderWidth: 1,
-        borderColor: '#777',
-        borderRadius: 8,
-        padding: 8,
-        width: '100%',
-        marginVertical: 5,
+        fontSize: 16,
+        marginVertical: 8,
+        backgroundColor: '#f9f9f9',
     },
     button: {
-        marginVertical: 10,
+        backgroundColor: '#1976D2',
+        paddingVertical: 12,
+        borderRadius: 8,
+        alignItems: 'center',
+        marginTop: 10,
+    },
+    buttonText: {
+        color: 'white',
+        fontSize: 16,
+        fontWeight: 'bold',
     },
     card: {
         flexDirection: 'row',
         alignItems: 'center',
-        padding: 15,
-        marginVertical: 5,
+        padding: 12,
+        marginVertical: 8,
         marginHorizontal: 10,
-        backgroundColor: '#f9f9f9',
-        borderRadius: 8,
-        elevation: 2,
+        backgroundColor: '#fff',
+        borderRadius: 12,
+        elevation: 3,
+        shadowColor: '#000',
+        shadowOffset: { width: 0, height: 2 },
+        shadowOpacity: 0.1,
+        shadowRadius: 4,
     },
     avatar: {
-        marginRight: 15,
+        marginRight: 20,
+        borderRadius: 25,
+        width: 50,
+        height: 50,
+        justifyContent: 'center',
+        alignItems: 'center',
     },
     cardtitle: {
-        fontSize: 16,
-        fontWeight: 'bold',
+        fontSize: 18,
+        fontWeight: '600',
+        color: '#333',
     },
-})
+});
