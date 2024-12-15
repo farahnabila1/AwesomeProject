@@ -46,56 +46,51 @@ Aplikasi ini mengambil data dari berbagai sumber sebagai referensi:
 
 ## 📸 **Tangkapan Layar**
 
-### 🏠 **Tampilan Landing Page**  
+### 🏠 **Tampilan Landing Page**
 Halaman utama dengan tampilan informasi pembuat aplikasi dan gambaran umum aplikasi.
 
-<p align="center">
-  <img src="assets/LandingPage-small.jpg" alt="Tampilan Landing Page" width="500" />
-</p>
+![Tampilan Landing Page](assets/LandingPage.jpg)
 
 ---
 
-### 🗺️ **Tampilan Peta Lokasi**  
-Peta yang menampilkan sebaran lokasi rumah sakit di Kota Surabaya dengan fitur pencarian lokasi.
+### 🗺️ **Tampilan Peta Lokasi**
+Peta yang ditampilkan dengan sebaran titik lokasi rumah sakit di Kota Surabaya disertai dengan fitur search untuk mempermudah pencarian titik lokasi.
 
-<p align="center">
-  <img src="assets/map-small.jpg" alt="Tampilan Peta Lokasi" width="500" />
-</p>
+![Tampilan Peta Lokasi](assets/map.jpg)
 
 ---
 
-### 🏥 **Formulir Pesan Kamar**  
-Formulir untuk memesan kamar di rumah sakit yang dipilih oleh pengguna.
+### ✏️ **Formulir Pesan Kamar**
+Formulir ini memungkinkan pengguna untuk melakukan pemesanan kamar pasien di rumah sakit yang telah dipilih.
 
-<p align="center">
-  <img src="assets/form-small.jpg" alt="Formulir Pesan Kamar" width="500" />
-</p>
-
----
-
-### ✏️ **Formulir Edit Data Rumah Sakit**  
-Memungkinkan pengguna untuk mengedit informasi rumah sakit dengan cepat dan sederhana.
-
-<p align="center">
-  <img src="assets/edit-form-small.jpg" alt="Formulir Edit Data Rumah Sakit" width="500" />
-</p>
+![Daftar Rumah Sakit](assets/form.jpg)
+![Formulir Pesan Kamar](assets/formulir%20pendaftaran.jpg)
 
 ---
 
-### 🔗 **Navigasi Media Sosial**  
-Menu navigasi untuk mengakses tautan komunikasi seperti WhatsApp, Instagram, LinkedIn, dan GitHub.
+### ✏️ **Formulir Edit Data Rumah Sakit**
+Formulir ini memungkinkan pengguna untuk mengedit data rumah sakit dengan mudah.
 
-<p align="center">
-  <img src="assets/social-links-small.jpg" alt="Navigasi Media Sosial" width="500" />
-</p>
+![Formulir Edit Data](assets/edit%20form.jpg)
 
 ---
 
-### 👤 **Profil Penyusun**  
-Informasi dan profil penyusun aplikasi untuk menginspirasi kolaborasi dan komunikasi.
+### 🏥 **Daftar Rumah Sakit**
+Tampilan daftar rumah sakit dengan detail seperti alamat, rating, dan kontak.
 
-<p align="center">
-  <img src="assets/profil-small.jpg" alt="Profil Penyusun" width="500" />
-</p>
+![Daftar Rumah Sakit](assets/images/daftar_rumah_sakit.png)
+
+---
+
+### 👤 **Profil Penyusun**
+Profil penyusun aplikasi kesehatan Kota Surabaya "CareLink".
+
+![Profil Penyusun](assets/profil1.jpg)
+
+---
+### 🔗 **Navigasi Media Sosial**
+Menu navigasi untuk mengakses berbagai tautan komunikasi seperti WhatsApp, Instagram, LinkedIn, dan GitHub.
+
+![Tautan Media Sosial](assets/profil2.jpg)
 
 ---
